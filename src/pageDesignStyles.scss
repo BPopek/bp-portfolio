@@ -1,0 +1,95 @@
+.Container {
+    // display: grid;
+    margin: 50px 25px;
+    // grid-template-columns: 1fr 1fr;
+    // grid-template-rows: auto;
+    gap: 25px;
+    flex-direction: row;
+    
+    // @media (min-width: 650px) {
+    //     grid-template-columns: 1fr 1fr 1fr;
+    // }
+    // @media (min-width: 1000px) {
+    //     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    // }
+}
+.carouselDiv {
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    display: flex;;
+}
+.webDesignCHitem {
+    width: 120px;
+    height: 150px;
+    background-color: yellow;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.GraphicDesignShirtsIndiv {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+.GDesignShirt {
+    width: 90vw;
+    // height: 400px;
+    margin: auto;
+    background-color: blue;
+    // background-position: center;
+    // background-size: auto;
+    // display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.uxIndiv {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+
+}
+.uxFullImage {
+    width: 300px;
+    height: 1800px;
+    background-color: grey;
+    background-position: center top;
+    background-size: contain; 
+    align-self: center;
+
+    @media (min-width: 650px) {
+        width: 600px;
+        height: 3600px;
+    }
+    @media (min-width: 1000px) {
+        width: 1000px;
+        height: 6000px;
+    }
+}
+.uxProject {
+    width: 120px;
+    height: 150px;
+    background-color: blue;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.uxFullImage {
+    width: 300px;
+    height: 800px;
+    /* background-color: grey;
+    background-image: url(${({background}) => background});
+    background-position: center;
+    background-size: cover; */
+    display: flex;
+    text-align: center;
+    /* justify-content: center; */
+}

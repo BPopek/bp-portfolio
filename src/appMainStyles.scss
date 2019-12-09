@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+$primaryHeaderFont: Montserrat;
+$primaryMainFont: Raleway;
+$primaryAccentColor: #055168;
+$primaryBackgroundColor: #dedede;
+
+.footerLink {
+    font-family: $primaryHeaderFont;
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+.footCont {
+    background-color: #dedede;
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.homeContainer {
+    display: grid;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 225px 225px 225px 225px;
+    row-gap: 25px;
+    column-gap: 25px;
+    // background-color: blue;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    background-position: center;
+    background-size: center;
+    text-align: center;
+    justify-content: center;
+
+    @media (min-width: 550px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media (min-width: 750px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+    @media (min-width: 850px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    }
+    @media (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+.navbarLink{
+    font-family: $primaryHeaderFont;
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    
+    &:active {
+    color: $primaryAccentColor;
+    }
+}
+.navbarCont {
+    background-color: $primaryBackgroundColor;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 40px;
+    line-height: 40px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.homeThumb {
+    width: 150px;
+    height: 200px;   
+}
