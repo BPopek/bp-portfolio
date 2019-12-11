@@ -1,15 +1,12 @@
 import React, {Component} from 'react'
-import WebDesignCH from './WebDesignCH'
+import WebDesign from './WebDesign'
 
 class WebDesignContainer extends Component {
-    constructor(){
-        super()
-    }
-
+    
     render(){
         return(
-            <div className='Container'>
-                <WebDesignCH alt='project'/>
+            <div >
+                <WebDesign />
             </div>
         )
     }

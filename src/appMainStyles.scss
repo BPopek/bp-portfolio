@@ -6,6 +6,10 @@ $primaryMainFont: Raleway;
 $primaryAccentColor: #055168;
 $primaryBackgroundColor: #dedede;
 
+* {
+    margin: 0;
+    padding: 0;
+}
 .footerLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
@@ -26,14 +30,11 @@ $primaryBackgroundColor: #dedede;
 }
 .homeContainer {
     display: grid;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 50px;
+    margin: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 225px 225px 225px 225px;
     row-gap: 25px;
     column-gap: 25px;
-    // background-color: blue;
     text-align: center;
     justify-items: center;
     align-items: center;
@@ -41,6 +42,8 @@ $primaryBackgroundColor: #dedede;
     background-size: center;
     text-align: center;
     justify-content: center;
+    flex-direction: row;
+
 
     @media (min-width: 550px) {
         grid-template-columns: 1fr 1fr 1fr;
@@ -81,7 +84,13 @@ $primaryBackgroundColor: #dedede;
     justify-content: space-evenly;
     text-align: center;
 }
-.homeThumb {
+.thumb {
     width: 150px;
-    height: 200px;   
+    height: 200px;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;  
 }

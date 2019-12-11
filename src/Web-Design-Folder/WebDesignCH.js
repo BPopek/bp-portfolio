@@ -8,8 +8,8 @@ class WebDesignCH extends Component {
 
     render(){
         return(
-            <div className='WebDesign'>
-                <div className='webDesignCHitem'  background={CHhome} alt='Cooper Hewitt Project'/>
+            <div className='homeContainer'>
+                <div className='thumb'  background={CHhome} alt='Cooper Hewitt Project'/>
             </div>
         )
     }

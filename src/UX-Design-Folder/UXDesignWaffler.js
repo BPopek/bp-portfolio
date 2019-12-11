@@ -21,12 +21,6 @@ class UXDesignWaffler extends Component {
     render(){
         return(
             <div className='uxIndiv'>
-                {/* <NavLink to='/ux-design/waffler'> */}
-                    {/* <div className='uxProject' background={Waffler} alt='Waffler Project'/> */}
-                    {/* <div className='uxFullImage' 
-                         background={WafflerFullPage} 
-                         alt='Waffler Full Project'/> */}
-                {/* </NavLink> */}
                 <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'80vw'}>
                             <div className='carouselDiv'>
                                 <img src={WafflerPage1} />

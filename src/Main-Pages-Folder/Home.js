@@ -21,25 +21,25 @@ class Home extends Component {
         return(
             <div className='homeContainer'>
                 <a href="http://cooper-hewitt-sdm.surge.sh/">
-                    <img src={CHThumb} className='homeThumb'></img>
+                    <img src={CHThumb} className='thumb'></img>
                 </a>
                 <a href="https://clue-murder-mystery.herokuapp.com/">
-                    <img src={ClueMMThumb} className='homeThumb' alt='Clue Murder Mystery Project'></img>
+                    <img src={ClueMMThumb} className='thumb' alt='Clue Murder Mystery Project'></img>
                 </a>
                 <Link to="/graphic-design/CPO">
-                    <img src={CPO1Thumb} className='homeThumb' alt='CPO Shirt Designs'></img>
+                    <img src={CPO1Thumb} className='thumb' alt='CPO Shirt Designs'></img>
                 </Link>
                 <Link to="/graphic-design/BC">
-                    <img src={BreastCancerTeesThumb} className='homeThumb' alt='Breast Cancer Designs'></img>
+                    <img src={BreastCancerTeesThumb} className='thumb' alt='Breast Cancer Designs'></img>
                 </Link>
                 <Link to="/graphic-design/Sammy">
-                    <img src={SammyMoxieThumb} className='homeThumb' alt='Sammy Has Moxie Designs'></img>
+                    <img src={SammyMoxieThumb} className='thumb' alt='Sammy Has Moxie Designs'></img>
                 </Link>
                 <Link to="/graphic-design/Catalogs">
-                    <img src={Catalog2018Thumb} className='homeThumb' alt='Catalog Designs'></img>
+                    <img src={Catalog2018Thumb} className='thumb' alt='Catalog Designs'></img>
                 </Link>
                 <Link to="/ux-design">
-                    <img src={Waffler} className='homeThumb' alt='Waffler UX Project'></img>
+                    <img src={Waffler} className='thumb' alt='Waffler UX Project'></img>
                 </Link>
             </div>
         )

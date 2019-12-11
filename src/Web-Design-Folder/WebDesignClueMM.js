@@ -8,7 +8,7 @@ class WebDesignClueMM extends Component {
 
     render(){
         return(
-            <div className='WebDesign'>
+            <div className='homeContainer'>
                 <div className='webDesignClueMM'  background={ClueMM} alt='Clue Murder Mystery'/>
             </div>
         )
