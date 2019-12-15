@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 //WEB COMPONENTS
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
 import ClueMMThumb from '../images/Web/clueMM-thumb.png';
+import Alta from '../images/Web/Alta-thumb.png';
 //GD COMPONENTS
 import CPO1Thumb from '../images/GD/shirts/CPO1-thumb.jpg';
 import BreastCancerTeesThumb from '../images/GD/shirts/BreastCancerTees-thumb.jpg';
@@ -20,12 +21,15 @@ class Home extends Component {
     render(){
         return(
             <div className='homeContainer'>
-                <a href="http://cooper-hewitt-sdm.surge.sh/">
+                <Link to="/web-design/CooperHewitt">
                     <img src={CHThumb} className='thumb'></img>
-                </a>
-                <a href="https://clue-murder-mystery.herokuapp.com/">
+                </Link>
+                <Link to="/web-design/ClueMM">
                     <img src={ClueMMThumb} className='thumb' alt='Clue Murder Mystery Project'></img>
-                </a>
+                </Link>
+                <Link to="/web-design/Alta">
+                    <img src={Alta} className='thumb' alt='Alta Mockup Website'></img>
+                </Link>
                 <Link to="/graphic-design/CPO">
                     <img src={CPO1Thumb} className='thumb' alt='CPO Shirt Designs'></img>
                 </Link>
@@ -35,8 +39,8 @@ class Home extends Component {
                 <Link to="/graphic-design/Sammy">
                     <img src={SammyMoxieThumb} className='thumb' alt='Sammy Has Moxie Designs'></img>
                 </Link>
-                <Link to="/graphic-design/Catalogs">
-                    <img src={Catalog2018Thumb} className='thumb' alt='Catalog Designs'></img>
+                <Link to="/graphic-design/Print">
+                    <img src={Catalog2018Thumb} className='thumb' alt='Print Designs'></img>
                 </Link>
                 <Link to="/ux-design">
                     <img src={Waffler} className='thumb' alt='Waffler UX Project'></img>

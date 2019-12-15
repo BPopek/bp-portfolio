@@ -1,3 +1,5 @@
+@import "appMainStyles.scss";
+
 // .Container {
 //     display: grid;
 //     margin: 50px 25px;
@@ -13,11 +15,35 @@
 //         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 //     }
 // }
+
 .carouselDiv {
     text-align: center;
     margin: auto;
     padding: auto;
-    display: flex;;
+    display: flex;
+}
+.imageCarousel {
+    position: relative;
+    top: 100px;
+    background-color: none;
+    margin: auto;
+
+}
+.parentDiv {
+    text-align: center;
+}
+.iframe {
+    margin: auto;
+    margin-top: 25px;
+}
+.webGitHubLinks {
+    margin-top: 80px;
+}
+.projectLink {
+    text-decoration: none;
+    font-family: $primaryHeaderFont;
+    font-weight: 600;
+    color: $primaryAccentColor;
 }
 // .webDesignCHitem {
 //     width: 120px;

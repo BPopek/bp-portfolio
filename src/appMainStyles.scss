@@ -16,6 +16,11 @@ $primaryBackgroundColor: #dedede;
     font-weight: 800;
     text-decoration: none;
     color: black;
+    letter-spacing: .35px;
+
+    &:hover {
+        color: $primaryAccentColor;
+    }
 }
 .footCont {
     background-color: #dedede;
@@ -30,9 +35,9 @@ $primaryBackgroundColor: #dedede;
 }
 .homeContainer {
     display: grid;
-    margin: 50px;
+    margin: 65px 50px 50px 50px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 225px 225px 225px 225px;
+    grid-template-rows: auto;
     row-gap: 25px;
     column-gap: 25px;
     text-align: center;
@@ -44,21 +49,24 @@ $primaryBackgroundColor: #dedede;
     justify-content: center;
     flex-direction: row;
 
-
     @media (min-width: 550px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
     @media (min-width: 750px) {
         grid-template-columns: 1fr 1fr 1fr 1fr ;
     }
-    @media (min-width: 850px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    @media (min-width: 900px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // margin-top: 75px;
     }
-    @media (min-width: 1000px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    @media (min-width: 1100px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    @media (min-width: 1200px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    @media (min-width: 1400px) {
+        // margin-top: 100px;
+        row-gap: 25px;
+        column-gap: 25px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 .navbarLink{
@@ -68,11 +76,16 @@ $primaryBackgroundColor: #dedede;
     text-decoration: none;
     font-size: 14px;
     color: black;
+    letter-spacing: .35px;
+    z-index: 1;
     
-    &:active {
-    color: $primaryAccentColor;
+    &:hover {
+        color: $primaryAccentColor;
     }
 }
+.navbarLinkActive{
+    color: $primaryAccentColor;
+} 
 .navbarCont {
     background-color: $primaryBackgroundColor;
     display: flex;
@@ -93,4 +106,25 @@ $primaryBackgroundColor: #dedede;
     display: flex;
     text-align: center;
     justify-content: center;  
+
+    @media (min-width: 550px) {
+        width: 150px;
+        height: 200px;
+    }
+    @media (min-width: 750px) {
+        width: 150px;
+        height: 200px;
+    }
+    @media (min-width: 900px) {
+        width: 200px;
+        height: 267px;
+    }
+    @media (min-width: 1100px) {
+        width: 225px;
+        height: 300px;
+    }
+    @media (min-width: 1400px) {
+        width: 250px;
+        height: 333px;
+    }
 }

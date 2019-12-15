@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-// import ClueMM from '../images/Web/clueMM-thumb.png'
 import Iframe from 'react-iframe'
 
-class WebDesignClueMM extends Component {
+class WebDesignAlta extends Component {
     constructor(){
         super()
     }
@@ -11,12 +10,12 @@ class WebDesignClueMM extends Component {
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>
-                    <a href="https://clue-murder-mystery.herokuapp.com/" className='projectLink'>Visit Clue Murder Mystery Project Website</a> 
+                    <a href="http://business-time-alta.surge.sh/" className='projectLink'>Visit Alta Ski Area Project Website</a> 
                     <br></br>
-                    <a href="https://github.com/BPopek/ClueMurderMystery" className='projectLink'> Visit Github Repository</a>
+                    <a href="https://github.com/BPopek/Business-Time---Alta-Ski-Area" className='projectLink'> Visit Github Repository</a>
                 </div>
                 
-                <Iframe url='https://clue-murder-mystery.herokuapp.com/'
+                <Iframe url='http://business-time-alta.surge.sh/'
                     width='683px'
                     height='450px'
                     className='iframe'
@@ -27,4 +26,4 @@ class WebDesignClueMM extends Component {
     }
 }
 
-export default WebDesignClueMM;
+export default WebDesignAlta;
