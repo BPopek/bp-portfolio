@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Raleway:400,600,800&display=swap');
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 $primaryHeaderFont: Montserrat;
@@ -13,7 +13,8 @@ $primaryBackgroundColor: #dedede;
 .footerLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
+    font-size: 14px;
     text-decoration: none;
     color: black;
     letter-spacing: .35px;
@@ -37,7 +38,7 @@ $primaryBackgroundColor: #dedede;
     display: grid;
     margin: 65px 50px 50px 50px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 267px;
     row-gap: 25px;
     column-gap: 25px;
     text-align: center;
@@ -63,16 +64,16 @@ $primaryBackgroundColor: #dedede;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1400px) {
-        // margin-top: 100px;
-        row-gap: 25px;
-        column-gap: 25px;
+        margin: 75px;
+        row-gap: 50px;
+        column-gap: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
 .navbarLink{
     font-family: $primaryHeaderFont;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: none;
     font-size: 14px;
     color: black;
@@ -104,8 +105,11 @@ $primaryBackgroundColor: #dedede;
     background-position: center;
     background-size: cover;
     display: flex;
+    position: relative;
     text-align: center;
     justify-content: center;  
+    border-radius: 2px;
+    z-index: 0;
 
     @media (min-width: 550px) {
         width: 150px;
@@ -123,8 +127,104 @@ $primaryBackgroundColor: #dedede;
         width: 225px;
         height: 300px;
     }
-    @media (min-width: 1400px) {
-        width: 250px;
-        height: 333px;
+    // @media (min-width: 1400px) {
+    //     width: 250px;
+    //     height: 333px;
+    // }
+}
+.projectParent {
+    position: relative;
+    display: inline-flex;
+    // margin: 0;
+    // padding: 0;
+    width: 150px;
+    // height: 200px;
+
+    @media (min-width: 550px) {
+        width: 150px;
+        // height: 200px;
+    }
+    @media (min-width: 750px) {
+        width: 150px;
+    }
+    @media (min-width: 900px) {
+        width: 200px;
+        // height: 267px;
+    }
+    @media (min-width: 1100px) {
+        width: 225px;
+        // height: 300px;
+    }
+}
+.projectBar {
+    background: whitesmoke;
+    position: relative;
+    display: flexbox;
+    padding: 5px 0px;
+    width: 150px;
+    z-index: 3;
+    top: 150px;
+    // box-sizing: border-box;
+
+    @media (min-width: 550px) {
+        width: 150px;
+    }
+    @media (min-width: 750px) {
+        width: 150px;
+    }
+    @media (min-width: 900px) {
+        width: 200px;
+    }
+    @media (min-width: 1100px) {
+        width: 225px;
+    }
+    &:hover {
+        display: none;
+    }
+}
+.projectName {
+    display: absolute;
+    font-family: $primaryHeaderFont;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    z-index: 4;
+    width: 100%;
+
+}
+.projectType {
+    display: absolute;
+    font-family: $primaryMainFont;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+
+}
+.projectDescription {
+    font-family: $primaryMainFont;
+    margin: 20px;
+    line-height: 1.8;
+
+}
+.iframe{
+    width: 300px;
+    height: 198px;
+
+    @media (min-width: 550px) {
+        width: 400px;
+        height: 264px;
+    }
+    @media (min-width: 750px) {
+        width: 600px;
+        height: 395px;
+    }
+    @media (min-width: 900px) {
+        width: 683px;
+        height: 450px;
+    }
+    @media (min-width: 1100px) {
+        width: 683px;
+        height: 450px;
     }
 }

@@ -44,6 +44,36 @@
     font-family: $primaryHeaderFont;
     font-weight: 600;
     color: $primaryAccentColor;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    position: relative;
+
+    @media (min-width: 550px) {
+        width: 150px;
+        height: 200px;
+    }
+    @media (min-width: 750px) {
+        width: 150px;
+        height: 200px;
+    }
+    @media (min-width: 900px) {
+        width: 200px;
+        height: 267px;
+    }
+    @media (min-width: 1100px) {
+        width: 225px;
+        height: 300px;
+    }
+}
+.projectLinkWebPage {
+    text-decoration: none;
+    font-family: $primaryHeaderFont;
+    font-weight: 600;
+    color: $primaryAccentColor;
+    display: inline-block;
+    position: relative;
+    line-height: 2;
 }
 // .webDesignCHitem {
 //     width: 120px;
@@ -55,7 +85,6 @@
 //     text-align: center;
 //     justify-content: center;
 // }
-
 
 .GDesignShirt {
     width: 90vw;

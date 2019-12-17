@@ -12,11 +12,13 @@ class WebDesignCH extends Component {
             <div className='parentDiv'>
                 {/* <div className='thumb'  background={CHhome} alt='Cooper Hewitt Project'/> */}
                 <div className='webGitHubLinks'>
-                    <a href="http://cooper-hewitt-sdm.surge.sh/" className='projectLink'>Visit Cooper Hewitt Museum Project Website</a> 
+                    <a href="http://cooper-hewitt-sdm.surge.sh/" className='projectLinkWebPage'>Visit Cooper Hewitt Museum Project Website</a> 
                     <br></br>
-                    <a href="https://github.com/BPopek/Cooper-Hewitt-SDM" className='projectLink'>Visit Github Repository</a>
+                    <a href="https://github.com/BPopek/Cooper-Hewitt-SDM" className='projectLinkWebPage'>Visit Github Repository</a>
                 </div>
-                
+                <p className='projectDescription'>
+                    React website project featuring the Cooper Hewitt Museum. Fully responsive and utilizes multiple API's provided by Cooper Hewitt. Built with React.js, JavaScript, HTML, CSS, Axios, and Node.js.
+                </p>
                 <Iframe url='http://cooper-hewitt-sdm.surge.sh/'
                     width='683px'
                     height='450px'

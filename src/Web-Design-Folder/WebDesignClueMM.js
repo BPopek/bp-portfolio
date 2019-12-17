@@ -11,11 +11,13 @@ class WebDesignClueMM extends Component {
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>
-                    <a href="https://clue-murder-mystery.herokuapp.com/" className='projectLink'>Visit Clue Murder Mystery Project Website</a> 
+                    <a href="https://clue-murder-mystery.herokuapp.com/" className='projectLinkWebPage'>Visit Clue Murder Mystery Project Website</a> 
                     <br></br>
-                    <a href="https://github.com/BPopek/ClueMurderMystery" className='projectLink'> Visit Github Repository</a>
+                    <a href="https://github.com/BPopek/ClueMurderMystery" className='projectLinkWebPage'> Visit Github Repository</a>
                 </div>
-                
+                <p className='projectDescription'>
+                    Full Stack Group Project inspired by the 1949 Clue board game. We built both front and back end of the game so the user interacts with API loaded with our data (endpoints include clues, suspects and weapons). Project built with React.js, JavaScript, HTML, CSS, Axios, Express, MongoDB and Node.js.
+                </p>
                 <Iframe url='https://clue-murder-mystery.herokuapp.com/'
                     width='683px'
                     height='450px'

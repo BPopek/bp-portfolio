@@ -17,6 +17,9 @@ class GraphicDesignCPO extends Component {
                 <Switch>
                     <div className='carouselDiv'>
                         <Route path='/graphic-design/CPO'>
+                        <p className='projectDescription'>
+                    Various designs created for the US Navy Chief Petty Officers. T-shirts are worn during Fleet Week activities, which include training runs and exercises as well as volunteer opportunities in the community.
+                </p>
                             <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'90vw'} >
                                 <div className='imageCarousel'>
                                     <img src={CPO1} alt='CPO Shirt Designs'/>
