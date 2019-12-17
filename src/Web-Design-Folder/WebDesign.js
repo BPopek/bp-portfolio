@@ -16,23 +16,32 @@ class WebDesign extends Component {
                 <Switch>
                     <Route path='/web-design'>
                         <Link to="/web-design/CooperHewitt">
+                            <span className='projectParent'>
+                                <div className='projectBar'>
+                                    <h1 className='projectName'>Cooper Hewitt</h1>
+                                    <h2 className='projectType'>Web Design </h2>
+                                </div>
+                            </span>
                             <img src={CHThumb} className='thumb' alt='Cooper Hewitt Project'></img>
                         </Link>
                         <Link to="/web-design/ClueMM">
+                            <span className='projectParent'>
+                                <div className='projectBar'>
+                                    <h1 className='projectName'>Clue Murder Mystery</h1>
+                                    <h2 className='projectType'>Web Design </h2>
+                                </div>
+                            </span>
                             <img src={ClueMMThumb} className='thumb' alt='Clue Murder Mystery Project'></img>
                             </Link>
-                            <Link to="/web-design/Alta">
+                        <Link to="/web-design/Alta">
+                            <span className='projectParent'>
+                                <div className='projectBar'>
+                                        <h1 className='projectName'>Alta Ski Area</h1>
+                                        <h2 className='projectType'>Web Design </h2>
+                                    </div>
+                            </span>
                             <img src={Alta} className='thumb' alt='Alta Mockup Website'></img>
                         </Link>
-                        {/* <a href="http://cooper-hewitt-sdm.surge.sh/">
-                            <img src={CHThumb} className='thumb' alt='Cooper Hewitt Project'></img>
-                        </a>
-                        <a href="https://clue-murder-mystery.herokuapp.com/">
-                            <img src={ClueMMThumb} className='thumb' alt='Clue Murder Mystery Project'></img>
-                        </a>
-                        <a href="http://business-time-alta.surge.sh//">
-                            <img src={Alta} className='thumb' alt='Alta Mockup Website'></img>
-                        </a> */}
                     </Route>
                 </Switch>
             </div>

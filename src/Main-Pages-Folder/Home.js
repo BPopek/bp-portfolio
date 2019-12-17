@@ -50,7 +50,6 @@ class Home extends Component {
                 </Link>
                 <Link to="/graphic-design/CPO">
                     <span className='projectParent'>
-
                         <div className='projectBar'>
                             <h1 className='projectName'>Navy Chief</h1>
                             <h2 className='projectType'>Graphic Design </h2>

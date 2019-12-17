@@ -9,7 +9,7 @@ class UXDesignContainer extends Component {
 
     render(){
         return(
-            <div className='homeContainer'>
+            <div className=''>
                 <UXDesignWaffler />
             </div>
         )

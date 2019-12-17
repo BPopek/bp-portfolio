@@ -6,6 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 import SammyMoxie from '../images/GD/Sammy/SammyMoxie.jpg';
 import SammyMoxieCB from '../images/GD/Sammy/SammyCBBottle.jpg';
 import SammyMoxieTravel from '../images/GD/Sammy/SammyTravel.jpg';
+import SammyMoxieMugs from '../images/GD/Sammy/SammyMugs.jpg';
 
 
 class GraphicDesignSammy extends Component {
@@ -16,20 +17,26 @@ class GraphicDesignSammy extends Component {
             <>
                 <Switch>
                     <Route path='/graphic-design/Sammy'>
-                        <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'50vw'}>
-                            <div>
-                                <img src={SammyMoxie} alt='Sammy Has Moxie'/>
-                            </div>
-                            <div>
-                                <img src={SammyMoxieCB} alt='Sammy Has Moxie CamelBak Bottle'/>
-                            </div>
-                            <div>
-                                <img src={SammyMoxieTravel} alt='Sammy Has Moxie Travel Mug'/>
-                            </div>
-                        </Carousel>
-                        {/* <img src={SammyMoxie} className='GDesignShirt' alt='Sammy Has Moxie'/>
-                        <img src={SammyMoxieCB} className='GDesignShirt' alt='Sammy Has Moxie CamelBak'/>
-                        <img src={SammyMoxieTravel} className='GDesignShirt' alt='Sammy Has Moxie Travel Mug'/> */}
+                    <p className='projectDescription'>
+                            xxxxxxxxxxxxxxxxxxxxxxxxxx.<br />
+                        </p>                    
+                        <div className='carouselDiv'>
+                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={false} useKeyboardArrows={true}>
+                                <div className='imageCarousel'>
+                                    <img src={SammyMoxie} alt='Sammy Has Moxie'/>
+                                </div>
+                                <div className='imageCarousel'>
+                                    <img src={SammyMoxieMugs} alt='Sammy Has Moxie Bottle'/>
+                                </div>
+                                {/* <div className='imageCarousel'>
+                                    <img src={SammyMoxieCB} alt='Sammy Has Moxie CamelBak Bottle'/>
+                                </div> */}
+                                {/* <div className='imageCarousel'>
+                                    <img src={SammyMoxieTravel} alt='Sammy Has Moxie Travel Mug'/>
+                                </div> */}
+                            </Carousel>
+                        </div>
+                    
                     </Route>                 
                 </Switch>
             </>

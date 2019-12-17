@@ -15,12 +15,12 @@ class GraphicDesignCPO extends Component {
         return(
             <div className='parentDiv'>
                 <Switch>
-                    <div className='carouselDiv'>
-                        <Route path='/graphic-design/CPO'>
+                    <Route path='/graphic-design/CPO'>
                         <p className='projectDescription'>
-                    Various designs created for the US Navy Chief Petty Officers. T-shirts are worn during Fleet Week activities, which include training runs and exercises as well as volunteer opportunities in the community.
-                </p>
-                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'90vw'} >
+                            Various designs created for the US Navy Chief Petty Officer Selectees.<br />T-shirts are worn during Fleet Week activities, which include training runs and exercises.<br /> There are also volunteer opportunities in the community.
+                        </p>
+                    <div className='carouselDiv'>
+                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true}  >
                                 <div className='imageCarousel'>
                                     <img src={CPO1} alt='CPO Shirt Designs'/>
                                 </div>
@@ -31,8 +31,8 @@ class GraphicDesignCPO extends Component {
                                     <img src={CPO3} alt='CPO Shirt Designs'/>
                                 </div>
                             </Carousel>
-                        </Route>    
-                    </div>               
+                        </div>               
+                    </Route>    
                 </Switch>
             </div>
         )

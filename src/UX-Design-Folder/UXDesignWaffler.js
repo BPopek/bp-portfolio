@@ -21,32 +21,32 @@ class UXDesignWaffler extends Component {
     render(){
         return(
             <div className='uxIndiv'>
-                <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'80vw'}>
+                <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'40vw'}>
                             <div className='carouselDiv'>
                                 <img src={WafflerPage1} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage2} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage3} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage4} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage5} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage6} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage7} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage8} />
                             </div>
-                            <div>
+                            <div className='carouselDiv'>
                                 <img src={WafflerPage9} />
                             </div>
                         </Carousel>
