@@ -11,7 +11,7 @@ import SammyMoxieThumb from '../images/GD/Sammy/SammyMoxie-thumb.jpg';
 import Catalog2018Thumb from '../images/GD/print/AAFESCatalog2018-thumb.jpg';
 //UX COMPONENTS
 import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
-
+import Profile from './Profile'
 
 class Home extends Component {
     constructor(){
@@ -75,7 +75,7 @@ class Home extends Component {
                         </span>
                     <img src={SammyMoxieThumb} className='thumb' alt='Sammy Has Moxie Designs'></img>
                 </Link>
-                <Link to="/graphic-design/Print">
+                <Link to='/graphic-design/Print'>
                     <span className='projectParent'>
                         <div className='projectBar'>
                                 <h1 className='projectName'>Print Designs</h1>
@@ -93,6 +93,8 @@ class Home extends Component {
                         </span>
                     <img src={Waffler} className='thumb' alt='Waffler UX Project'></img>
                 </Link>
+                <Link to="/profile">{Profile}</Link>
+
             </div>
         )
     }

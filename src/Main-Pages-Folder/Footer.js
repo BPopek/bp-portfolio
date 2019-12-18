@@ -9,6 +9,7 @@ function Footer() {
             </a>
             <a href='https://github.com/BPopek' className='footerLink'>GitHub</a>
             <a href='https://www.instagram.com/betsypopek/' className='footerLink'>Instagram</a>
+            <p className='footerLink'>Say Hello!</p>
         </div>
     )
 }

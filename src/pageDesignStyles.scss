@@ -5,7 +5,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: auto;
-    
 }
 .imageCarousel {
     position: relative;
@@ -25,7 +24,7 @@
     }
     @media (min-width: 900px) {
         width: 800px;
-        max-height: 500px;
+        max-height: 600px;
     }
     // @media (min-width: 1100px) {
         
@@ -35,7 +34,7 @@
     background-color: white !important;
 }
 .carousel .slide img {
-    max-height: 400px;  /* change this to whatever you want */
+    max-height: 600px;  /* change this to whatever you want */
     width: 100%;
     object-fit: cover;
 }
@@ -49,7 +48,19 @@
     text-align: center;
 }
 .webGitHubLinks {
-    margin-top: 80px;
+    margin-top: 50px;
+
+    @media (min-width: 400px) {
+        font-size: 15px;
+        margin: 50px 45px 0px;
+    }
+    @media (min-width: 550px) {
+        font-size: 16px;
+    }
+    @media (min-width: 750px) {
+        font-size: 16px;
+        margin: 60px 45px 0px;
+    }
 }
 .projectLink {
     display: flex;
@@ -85,7 +96,20 @@
     color: $primaryAccentColor;
     display: inline-block;
     position: relative;
-    line-height:1.8;
+    line-height: 1.4;
+    font-size: 14px;
+    margin: 20px 45px 0px;
+
+    @media (min-width: 400px) {
+        font-size: 15px;
+        margin: 20px 45px 0px;
+    }
+    @media (min-width: 550px) {
+        font-size: 16px;
+    }
+    @media (min-width: 750px) {
+        font-size: 16px;
+    }
 }
 .projectDescription {
     font-family: $primaryMainFont;
@@ -95,7 +119,7 @@
 
     @media (min-width: 400px) {
         font-size: 15px;
-        margin: 80px 45px 0px;
+        margin: 0px 45px 0px;
     }
     @media (min-width: 550px) {
         font-size: 16px;
@@ -103,6 +127,34 @@
     @media (min-width: 750px) {
         font-size: 16px;
     }
+}
+.projectDescriptionWeb {
+    font-family: $primaryMainFont;
+    margin: 15px 35px 0px;
+    line-height: 1.5;
+    font-size: 14px;
+
+    @media (min-width: 400px) {
+        font-size: 15px;
+        margin: 20px 45px 0px;
+    }
+    @media (min-width: 550px) {
+        font-size: 16px;
+    }
+    @media (min-width: 750px) {
+        font-size: 16px;
+        margin: 20px 45px 30px;
+    }
+    @media (min-width: 120px) {
+        font-size: 16px;
+        margin: 20px 100px 30px;
+    }
+}
+.herokuDisclaimer {
+    font-family: $primaryMainFont;
+    margin: 5px 35px 0px;
+    font-size: 13px;
+    font-style: oblique;
 }
 .GDesignShirt {
     width: 90vw;

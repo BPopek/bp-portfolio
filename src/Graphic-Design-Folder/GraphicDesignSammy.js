@@ -21,7 +21,7 @@ class GraphicDesignSammy extends Component {
                             xxxxxxxxxxxxxxxxxxxxxxxxxx.<br />
                         </p>                    
                         <div className='carouselDiv'>
-                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={false} useKeyboardArrows={true}>
+                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true}>
                                 <div className='imageCarousel'>
                                     <img src={SammyMoxie} alt='Sammy Has Moxie'/>
                                 </div>

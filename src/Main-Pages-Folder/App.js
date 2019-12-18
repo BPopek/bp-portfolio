@@ -15,6 +15,7 @@ import GraphicDesignContainer from '../Graphic-Design-Folder/GraphicDesignContai
 import GraphicDesignCPO from '../Graphic-Design-Folder/GraphicDesignCPO';
 import GraphicDesignBC from '../Graphic-Design-Folder/GraphicDesignBC';
 import GraphicDesignSammy from '../Graphic-Design-Folder/GraphicDesignSammy';
+import GraphicDesignPrint from '../Graphic-Design-Folder/GraphicDesignPrint';
 
 import Profile from './Profile';
 import Navbar from './Navbar';
@@ -39,6 +40,7 @@ class App extends Component {
               <Route exact path='/graphic-design/CPO' component={GraphicDesignCPO} />
               <Route exact path='/graphic-design/BC' component={GraphicDesignBC} />
               <Route exact path='/graphic-design/Sammy' component={GraphicDesignSammy} />
+              <Route exact path='/graphic-design/Print' component={GraphicDesignPrint} />
               <Route exact path='/ux-design' component={UXDesignContainer} />
               <Route exact path='/ux-design/waffler' component={UXDesignWafflerFullPage} />
               <Route path='/profile' component={Profile} />
