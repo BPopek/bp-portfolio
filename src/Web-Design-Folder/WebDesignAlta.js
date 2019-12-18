@@ -15,7 +15,7 @@ class WebDesignAlta extends Component {
                     <a href="https://github.com/BPopek/Business-Time---Alta-Ski-Area" className='projectLinkWebPage'> Visit Github Repository</a>
                 </div>
                 <p className='projectDescriptionWeb'>
-                    Exercise to create a business website for Alta Ski Area.<br /> Website is fully responsive, utilizing three different sizes for a variety of screens.<br /> Built using CSS & HTML.
+                    Exercise to create a business website for Alta Ski Area.<br /> Website is fully responsive, utilizing three different sizes to cleanly organize information.<br /> Website is built using CSS & HTML.
                 </p>
                 <Iframe url='http://business-time-alta.surge.sh/'
                     className='iframe'

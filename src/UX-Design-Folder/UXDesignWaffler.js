@@ -20,33 +20,33 @@ class UXDesignWaffler extends Component {
 
     render(){
         return(
-            <div className='uxIndiv'>
-                <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} width={'40vw'}>
-                            <div className='carouselDiv'>
+            <div className='carouselDiv'>
+                <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} showIndicators={true} showArrows={true} useKeyboardArrows={true}>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage1} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage2} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage3} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage4} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage5} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage6} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage7} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage8} />
                             </div>
-                            <div className='carouselDiv'>
+                            <div className='imageCarouselUX'>
                                 <img src={WafflerPage9} />
                             </div>
                         </Carousel>

@@ -9,7 +9,7 @@
 .imageCarousel {
     position: relative;
     background-color: none;
-    margin: 40px auto 20px;
+    margin: 30px auto 20px;
     text-align: center;
     width: 300px;
 
@@ -30,6 +30,30 @@
         
     // }
 }
+.imageCarouselUX {
+    position: relative;
+    background-color: none;
+    margin: 40px auto 20px;
+    text-align: center;
+    width: 300px;
+
+    @media (min-width: 400px) {
+        width: 350px;
+    }
+    @media (min-width: 550px) {
+        width: 400px;
+    }
+    @media (min-width: 750px) {
+        width: 500px;
+    }
+    @media (min-width: 900px) {
+        width: 600px;
+        max-height: 600px;
+    }
+    // @media (min-width: 1100px) {
+        
+    // }
+}
 .carousel .slide {
     background-color: white !important;
 }
@@ -42,6 +66,7 @@
     background-color: none;
 }
 .ul.control-dots {
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 .parentDiv {
@@ -100,6 +125,10 @@
     font-size: 14px;
     margin: 20px 45px 0px;
 
+    &:hover {
+        color: $secondAccentColor;
+    }
+
     @media (min-width: 400px) {
         font-size: 15px;
         margin: 20px 45px 0px;
@@ -145,9 +174,27 @@
         font-size: 16px;
         margin: 20px 45px 30px;
     }
-    @media (min-width: 120px) {
+    @media (min-width: 1100px) {
         font-size: 16px;
-        margin: 20px 100px 30px;
+        margin: 20px 150px 30px;
+    }
+}
+.projectDescriptiononSlideshow {
+    font-family: $primaryMainFont;
+    margin: 80px 35px 0px;
+    line-height: 1.5;
+    font-size: 14px;
+
+    @media (min-width: 400px) {
+        font-size: 15px;
+    }
+    @media (min-width: 550px) {
+        font-size: 16px;
+    }
+    @media (min-width: 750px) {
+        font-size: 16px;
+        margin: 80px 100px 0px;
+
     }
 }
 .herokuDisclaimer {

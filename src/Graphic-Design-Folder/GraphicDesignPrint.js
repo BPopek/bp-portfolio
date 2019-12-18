@@ -16,7 +16,7 @@ class GraphicDesignPrint extends Component {
             <div className='parentDiv'>
                 <Switch>
                     <Route path='/graphic-design/Print'>
-                        <p className='projectDescription'>
+                        <p className='projectDescriptiononSlideshow'>
                                 A sample of print design including a variety of catalogs and print ads.<br />
                             </p>
                         <div className='carouselDiv'>

@@ -4,7 +4,9 @@
 $primaryHeaderFont: Montserrat;
 $primaryMainFont: Raleway;
 $primaryAccentColor: #055168;
+$secondAccentColor: #617;
 $primaryBackgroundColor: #dedede;
+$darkgrey: #666;
 
 * {
     margin: 0;
@@ -35,11 +37,9 @@ $primaryBackgroundColor: #dedede;
     }
     @media (min-width: 750px) {
         grid-template-columns: 1fr 1fr 1fr 1fr ;
+        margin: 85px 50px 50px 50px;
     }
     @media (min-width: 900px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    @media (min-width: 1100px) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1400px) {
@@ -72,6 +72,7 @@ $primaryBackgroundColor: #dedede;
     line-height: 40px;
     justify-content: space-evenly;
     text-align: center;
+    z-index: 5;
 }
 .navbarLink{
     font-family: $primaryHeaderFont;
@@ -81,12 +82,12 @@ $primaryBackgroundColor: #dedede;
     font-size: 12px;
     color: black;
     letter-spacing: .15px;
-    z-index: 1;
+    z-index: 5;
     line-height: 1.2;
     margin: 0px 5px 0px;
     
     &:hover {
-        color: $primaryAccentColor;
+        color: $secondAccentColor;
     }
     @media (min-width: 400px) {
         font-size: 14px;
@@ -104,6 +105,7 @@ $primaryBackgroundColor: #dedede;
 }
 .navbarLinkActive{
     color: $primaryAccentColor;
+    font-weight: 700;
 } 
 .navbarCont {
     background-color: $primaryBackgroundColor;
@@ -116,7 +118,7 @@ $primaryBackgroundColor: #dedede;
     line-height: 50px;
     justify-content: space-evenly;
     text-align: center;
-    z-index: 5;
+    z-index: 6;
     box-sizing: border-box;
 }
 .thumb {
@@ -142,6 +144,10 @@ $primaryBackgroundColor: #dedede;
         height: 200px;
     }
     @media (min-width: 900px) {
+        width: 175px;
+        height: 233px;
+    }
+    @media (min-width: 1100px) {
         width: 200px;
         height: 267px;
     }
@@ -179,51 +185,59 @@ $primaryBackgroundColor: #dedede;
     }
 }
 .projectBar {
-    background: white;
+    background: rgba(255, 255, 255, 0.897);
     position: absolute;
-    opacity: 95%;
-    height: 40px;
-    width: 150px;
+    height: 50px;
+    width: 125px;
     z-index: 3;
     top: 80px;
+    margin-left: 12.5px;
+    border: 2px white solid;
+    box-sizing: border-box;
+    box-shadow: $darkgrey 1px 1px 5px;
 
     @media (min-width: 550px) {
-        width: 150px;
-        // top: 90px;
+        width: 125px;
     }
     @media (min-width: 750px) {
-        width: 150px;
-        // top: 90px;
+        width: 125px;
     }
     @media (min-width: 900px) {
-        width: 200px;
-        top: 120px;
+        width: 150px;
+        top: 100px;
+
     }
     @media (min-width: 1100px) {
-        width: 225px;    
+        width: 175px;    
         top: 130px;
+
     }
-    // @media (min-width: 1400px) {
-    //     width: 225px;    
-    //     top: 140px;
-    // }
+    @media (min-width: 1400px) {
+        width: 200px;    
+        top: 140px;
+    }
 }
 .projectName {
     display: absolute;
     font-family: $primaryHeaderFont;
     font-size: 12px;
-    color: $primaryAccentColor;
+    // color: $primaryAccentColor;
+    color: black;
     text-decoration: none;
     z-index: 4;
     width: 100%;
     line-height: 1.8;
+    margin-top: 5px;
+    letter-spacing: .3px;
 }
 .projectType {
     font-family: $primaryMainFont;
     font-size: 12px;
-    color: $primaryAccentColor;
+    font-weight: 600;
+    color: $darkgrey;
     text-decoration: none;
     width: 100%;
+    letter-spacing: .4px;
 }
 .iframe {
     position: relative;
@@ -286,7 +300,7 @@ $primaryBackgroundColor: #dedede;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px 25px 0px;
     font-size: 15px;
-    color: $primaryAccentColor;
+    color: $secondAccentColor;
     font-weight: 600;
     letter-spacing: .4px;
 
@@ -417,8 +431,15 @@ $primaryBackgroundColor: #dedede;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
-    color: $primaryAccentColor;
+    background-color: $primaryAccentColor;
+    color: white;
     font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: $secondAccentColor;
+    }
 
     @media (min-width: 400px) {
         font-size: 18px;

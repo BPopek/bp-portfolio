@@ -6,6 +6,10 @@ import { Carousel } from 'react-responsive-carousel';
 import CPO1 from '../images/GD/shirts/CPO/CPO1.jpg';
 import CPO2 from '../images/GD/shirts/CPO/CPO2.jpg';
 import CPO3 from '../images/GD/shirts/CPO/CPO3.jpg';
+import CPO4 from '../images/GD/shirts/CPO/190819-N-LI768-1127.jpg';
+import CPO5 from '../images/GD/shirts/CPO/4671577.jpg';
+import CPO6 from '../images/GD/shirts/CPO/SelecteesLeaveBoat.jpg';
+import CPO7 from '../images/GD/shirts/CPO/35941070304_e16e779e7f_k.jpg';
 
 
 class GraphicDesignCPO extends Component {
@@ -16,7 +20,7 @@ class GraphicDesignCPO extends Component {
             <div className='parentDiv'>
                 <Switch>
                     <Route path='/graphic-design/CPO'>
-                        <p className='projectDescription'>
+                        <p className='projectDescriptiononSlideshow'>
                             Various designs created for the US Navy Chief Petty Officer Selectees.<br />T-shirts are worn during Fleet Week activities, which include training runs and exercises.<br /> There are also volunteer opportunities in the community.
                         </p>
                     <div className='carouselDiv'>
@@ -26,6 +30,18 @@ class GraphicDesignCPO extends Component {
                                 </div>
                                 <div className='imageCarousel'>
                                     <img src={CPO2} alt='CPO Shirt Designs'/>
+                                </div>
+                                <div className='imageCarousel'>
+                                    <img src={CPO7} alt='CPO Shirt Designs'/>
+                                </div>
+                                <div className='imageCarousel'>
+                                    <img src={CPO4} alt='CPO Shirt Designs'/>
+                                </div>
+                                <div className='imageCarousel'>
+                                    <img src={CPO5} alt='CPO Shirt Designs'/>
+                                </div>
+                                <div className='imageCarousel'>
+                                    <img src={CPO6} alt='CPO Shirt Designs'/>
                                 </div>
                                 <div className='imageCarousel'>
                                     <img src={CPO3} alt='CPO Shirt Designs'/>

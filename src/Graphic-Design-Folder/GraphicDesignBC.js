@@ -20,7 +20,7 @@ class GraphicDesignBC extends Component {
             <div className='parentDiv'>
                 <Switch>
                     <Route path='/graphic-design/BC'>
-                        <p className='projectDescription'>
+                        <p className='projectDescriptiononSlideshow'>
                             A sample of designs created for AAFES stores to sell during Breast Cancer Month.<br />Designs are inspired by current trends as well as feedback from stores, managers and our military reps.
                         </p>
                     <div className='carouselDiv'>

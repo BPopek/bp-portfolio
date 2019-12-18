@@ -14,11 +14,11 @@ class GraphicDesignSammy extends Component {
     render(){
         
         return(
-            <>
+            <div className='parentDiv'>
                 <Switch>
                     <Route path='/graphic-design/Sammy'>
-                    <p className='projectDescription'>
-                            xxxxxxxxxxxxxxxxxxxxxxxxxx.<br />
+                        <p className='projectDescriptiononSlideshow'>
+                            Designs created for a coworker's friend, whose daughter had been diagnosed with brain cancer. They are being used as gifts (t-shirts, water bottles and future products) to thank friends and family, as well as raffle prizes and fundraisers. Their daughter Sammy has kept a positive attitude through treatment, and her family often uses the phrase "Sammy's Got Moxie" to describe her mindset, which evolved to 'Sammy Has Moxie' during the design process.<br />
                         </p>                    
                         <div className='carouselDiv'>
                             <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true}>
@@ -36,10 +36,9 @@ class GraphicDesignSammy extends Component {
                                 </div> */}
                             </Carousel>
                         </div>
-                    
                     </Route>                 
                 </Switch>
-            </>
+            </div>
         )
     }
 }

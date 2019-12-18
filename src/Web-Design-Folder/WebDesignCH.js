@@ -16,7 +16,7 @@ class WebDesignCH extends Component {
                     <a href="https://github.com/BPopek/Cooper-Hewitt-SDM" className='projectLinkWebPage'>Visit Github Repository</a>
                 </div>
                 <p className='projectDescriptionWeb'>
-                    React website project featuring the Cooper Hewitt Museum.<br /> Fully responsive and utilizes multiple API's provided by Cooper Hewitt.<br />Built with React.js, JavaScript, HTML, CSS, Axios, and Node.js.
+                    React website project utilizing the Cooper Hewitt Museum API to provide an interactive experience for viewing museum experience.<br /> Fully responsive and utilizes multiple API endpoints provided by Cooper Hewitt Museum.<br />Developed front-end design and functionality for a clean and informative experience.<br />Built with React.js, JavaScript, HTML, CSS, Axios, and Node.js.
                 </p>
                     <Iframe url='http://cooper-hewitt-sdm.surge.sh/'
                         className='iframe'
