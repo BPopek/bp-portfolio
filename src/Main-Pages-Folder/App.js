@@ -16,7 +16,7 @@ import GraphicDesignCPO from '../Graphic-Design-Folder/GraphicDesignCPO';
 import GraphicDesignBC from '../Graphic-Design-Folder/GraphicDesignBC';
 import GraphicDesignSammy from '../Graphic-Design-Folder/GraphicDesignSammy';
 import GraphicDesignPrint from '../Graphic-Design-Folder/GraphicDesignPrint';
-import GraphicDesignBA from '../Graphic-Design-Folder/GraphicDesignBA';
+// import GraphicDesignBA from '../Graphic-Design-Folder/GraphicDesignBA';
 
 import Profile from './Profile';
 import Navbar from './Navbar';
@@ -41,7 +41,7 @@ class App extends Component {
               <Route exact path='/graphic-design/CPO' component={GraphicDesignCPO} />
               <Route exact path='/graphic-design/BC' component={GraphicDesignBC} />
               <Route exact path='/graphic-design/Sammy' component={GraphicDesignSammy} />
-              <Route exact path='/graphic-design/BlueAngels' component={GraphicDesignBA} />
+              {/* <Route exact path='/graphic-design/BlueAngels' component={GraphicDesignBA} /> */}
 
               <Route exact path='/graphic-design/Print' component={GraphicDesignPrint} />
               <Route exact path='/ux-design' component={UXDesignContainer} />
