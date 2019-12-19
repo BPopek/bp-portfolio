@@ -21,7 +21,7 @@ function Profile () {
             <h5 className='contactHeader'>Contact:</h5>
             <p className='contact'><b>email:</b> betsypopek@gmail.com</p>
             <p className='contactPhone'><b>phone:</b> 603.682.7185</p>
-            <a href="/images/BPopekSLC_12-16-19.pdf" download className='resumeLink'>
+            <a href="./images/BPopekSLC_12-16-19.pdf" download='BPopekResume.pdf' className='resumeLink'>
                 {/* <img src="/images/BPopekSLC_12-16-19.pdf" alt="BP Resume"/> */}
                 DOWNLOAD RESUME
             </a>

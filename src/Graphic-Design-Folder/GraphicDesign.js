@@ -8,6 +8,7 @@ import CPO1Thumb from '../images/GD/shirts/CPO1-thumb.jpg';
 import BreastCancerTeesThumb from '../images/GD/shirts/BreastCancerTees-thumb.jpg';
 import SammyMoxieThumb from '../images/GD/Sammy/SammyMoxie-thumb.jpg';
 import Catalog2018Thumb from '../images/GD/print/AAFESCatalog2018-thumb.jpg';
+import Misc from '../images/GD/MISC/IMG_4829.JPG'
 
 class GraphicDesign extends Component {
 
@@ -36,6 +37,19 @@ class GraphicDesign extends Component {
                                 </span>
                                 <img src={BreastCancerTeesThumb} className='thumb' alt='Breast Cancer Designs'></img>
                             </Link>
+                            <Link to='/graphic-design/BlueAngels'>
+                                <span className='projectParent'>
+                                    <div className='projectBar'>
+                                        <h1 className='projectName'>Blue Angels</h1>
+                                        <h2 className='projectType'>Graphic Design </h2>
+                                    </div>
+                                </span>
+
+
+
+                                {/* NEED IMAGE  */}
+                                <img src={CPO1Thumb} className='thumb' alt='Blue Angels Designs'></img>
+                            </Link>
                             <Link to="/graphic-design/Sammy">
                                 <span className='projectParent'>
                                     <div className='projectBar'>
@@ -54,6 +68,15 @@ class GraphicDesign extends Component {
                                     </span>
                                 <img src={Catalog2018Thumb} className='thumb' alt='Catalog Designs'></img>
                             </Link>
+                            <Link to='/graphic-design/MISC'>
+                    <span className='projectParent'>
+                        <div className='projectBar'>
+                                <h1 className='projectName'>Misc Designs</h1>
+                                <h2 className='projectType'>Graphic Design </h2>
+                            </div>
+                        </span>
+                    <img src={Misc} className='thumb' alt='Misc Designs'></img>
+                </Link>
                         </Route>
                     </div>
 
