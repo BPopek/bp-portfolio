@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import BPopekResume from '../images/BPopekResume.pdf'
+// import BPopekResume2 from '.../public/BPopekSLC_12-16-19.pdf'
+
 
 function Profile () {
 
