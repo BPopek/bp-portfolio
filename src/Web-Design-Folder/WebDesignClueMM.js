@@ -3,10 +3,7 @@ import React, {Component} from 'react'
 import Iframe from 'react-iframe'
 
 class WebDesignClueMM extends Component {
-    constructor(){
-        super()
-    }
-
+    
     render(){
         return(
             <div className='parentDiv'>

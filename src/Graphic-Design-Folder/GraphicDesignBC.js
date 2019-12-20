@@ -3,7 +3,7 @@ import {Switch, Route} from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 
 //images for BC carousel
-import BreastCancerTees from '../images/GD/shirts/Breast Cancer/BreastCancerTees.jpg';
+// import BreastCancerTees from '../images/GD/shirts/Breast Cancer/BreastCancerTees.jpg';
 import BC1 from '../images/GD/shirts/Breast Cancer/BreastCancer_FFE2874.jpg'
 import BC2 from '../images/GD/shirts/Breast Cancer/BreastCancer_FFE2876.jpg'
 import BC3 from '../images/GD/shirts/Breast Cancer/BreastCancer_FFE2877.jpg'

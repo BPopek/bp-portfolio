@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Switch, Route} from 'react-router-dom';
 import {Link} from 'react-router-dom';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
+// import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 //thumbs for web page
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';

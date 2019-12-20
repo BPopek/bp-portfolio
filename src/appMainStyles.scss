@@ -16,7 +16,7 @@ $darkgrey: #666;
     margin: 0;
     padding: 0;
     top: 0;
-    height: 100vh;
+    height: 100%;
 }
 .homeContainer {
     display: grid;
@@ -274,7 +274,13 @@ $darkgrey: #666;
 
 .profile {
     text-align: center;
-    margin: 80px 0px;    
+    margin: 80px 0px 0px;    
+}
+.profile2 {
+    text-align: center;
+    margin-right: 35px;  
+    margin-bottom: 75px; 
+
 }
 .welcome {
     font-family: $primaryMainFont;
@@ -303,6 +309,12 @@ $darkgrey: #666;
     color: $secondAccentColor;
     font-weight: 600;
     letter-spacing: .4px;
+
+    &:hover {
+        color: $primaryAccentColor;
+        transform: scale(1.25, 1.25);
+        transition: ease-in-out 250ms;
+     }
 
     @media (min-width: 400px) {
         font-size: 16px;
@@ -337,32 +349,64 @@ $darkgrey: #666;
         line-height: 1.6;
     }
 }
-.skills {
+.profileHeader {
     font-family: $primaryMainFont;
-    margin: 15px 35px 20px;
+    color: $primaryAccentColor;
+    margin: 15px 35px 0px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.4;
+
+    @media (min-width: 700px) {
+        font-size: 18px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 20px;
+    }
+}
+.profileSmHead {
+    font-family: $primaryMainFont;
+    font-weight: 600;
+    margin: 3px 0px 0px 35px;
     font-size: 15px;
     text-align: left;
     line-height: 1.4;
 
     @media (min-width: 400px) {
-        margin: 15px 35px 25px;  
     }
     @media (min-width: 700px) {
         font-size: 18px;
-        margin: 20px 35px 0px;
     }
     @media (min-width: 1000px) {
         font-size: 20px;
-        margin: 40px 75px 0px;
     }
 }
-.skillsHeader {
+.profileSmHeadPhone {
     font-family: $primaryMainFont;
-    color: $primaryAccentColor;
-    margin: 5px 0px 0px;
+    font-weight: 600;
+    margin: 3px 0px 20px 35px;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.4;
+
+    @media (min-width: 400px) {
+    }
+    @media (min-width: 700px) {
+        font-size: 18px;
+        margin: 3px 0px 40px 35px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 20px;
+    }
+}
+.profileDetail {
+    font-family: $primaryMainFont;
+    font-weight: 500;
     font-size: 16px;
     text-align: left;
     line-height: 1.4;
+    display: inline;
+
 
     @media (min-width: 700px) {
         font-size: 18px;
@@ -373,61 +417,32 @@ $darkgrey: #666;
         margin: 20px 0px 0px;
     }
 }
-.contactHeader {
+.profileDetailEmail {
     font-family: $primaryMainFont;
-    color: $primaryAccentColor;
-    margin: 5px 35px 0px;
+    font-weight: 500;
     font-size: 16px;
     text-align: left;
     line-height: 1.4;
+    display: inline;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        color: $secondAccentColor
+    }
 
     @media (min-width: 700px) {
         font-size: 18px;
-        margin: 20px 35px 0px;
+        margin: 20px 0px 0px;
     }
     @media (min-width: 1000px) {
         font-size: 20px;
-        margin: 20px 75px 0px;
-    }
-}
-.contact {
-    font-family: $primaryMainFont;
-    margin: 5px 35px 0px;
-    font-size: 15px;
-    text-align: left;
-
-    @media (min-width: 400px) {
-        font-size: 16px;
-    }
-    @media (min-width: 700px) {
-        font-size: 18px;
-    }
-    @media (min-width: 1000px) {
-        font-size: 20px;
-        margin: 2px 75px 0px;
-    }
-}
-.contactPhone {
-    font-family: $primaryMainFont;
-    margin: 2px 35px 20px;
-    font-size: 15px;
-    text-align: left;
-
-    @media (min-width: 400px) {
-        font-size: 16px;
-    }
-    @media (min-width: 700px) {
-        font-size: 18px;
-    }
-    @media (min-width: 1000px) {
-        font-size: 20px;
-        margin: 2px 75px 40px;
-
+        margin: 20px 0px 0px;
     }
 }
 .resumeLink {
     font-family: $primaryMainFont;
-    margin: 25px 35px 0px 35px;
+    margin: 25px 35px 100px 35px;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -449,6 +464,5 @@ $darkgrey: #666;
     }
     @media (min-width: 1000px) {
         font-size: 22px;
-        margin: 50px 75px 0px;
     }
 }

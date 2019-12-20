@@ -3,9 +3,6 @@ import React, {Component} from 'react'
 import Iframe from 'react-iframe'
 
 class WebDesignCH extends Component {
-    constructor(){
-        super()
-    }
 
     render(){
         return(

@@ -9,7 +9,7 @@ import CPO1Thumb from '../images/GD/shirts/CPO1-thumb.jpg';
 import BreastCancerTeesThumb from '../images/GD/shirts/BreastCancerTees-thumb.jpg';
 import SammyMoxieThumb from '../images/GD/Sammy/SammyMoxie-thumb.jpg';
 import Catalog2018Thumb from '../images/GD/print/AAFESCatalog2018-thumb.jpg';
-import BlueAngels from '../images/GD/shirts/BreastCancerTees-thumb.jpg';
+import BlueAngels from '../images/GD/shirts/Blue Angels/BA671111-model-thumb.jpg';
 
 //UX COMPONENTS
 import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
@@ -18,9 +18,6 @@ import Profile from './Profile'
 import Misc from '../images/GD/MISC/IMG_4829.JPG'
 
 class Home extends Component {
-    constructor(){
-        super()
-    }
 
     render(){
         return(
@@ -32,7 +29,7 @@ class Home extends Component {
                             <h2 className='projectType'>Web Design </h2>
                         </div>
                     </span>
-                    <img src={CHThumb} className='thumb'></img>
+                    <img src={CHThumb} className='thumb' alt='Cooper Hewitt Museum Project'></img>
                 </Link>
                 <Link to='/web-design/ClueMM'>
                     <span className='projectParent'>
@@ -77,15 +74,8 @@ class Home extends Component {
                             <h2 className='projectType'>Graphic Design </h2>
                         </div>
                     </span>
-
-
-
-                    {/* NEED IMAGE  */}
-                    <img src={CPO1Thumb} className='thumb' alt='Blue Angels Designs'></img>
+                    <img src={BlueAngels} className='thumb' alt='Blue Angels Designs'></img>
                 </Link>
-
-
-
                 <Link to='/graphic-design/Sammy'>
                     <span className='projectParent'>
                         <div className='projectBar'>

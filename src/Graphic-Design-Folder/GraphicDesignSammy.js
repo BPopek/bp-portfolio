@@ -4,8 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 
 //images for Sammy carousel
 import SammyMoxie from '../images/GD/Sammy/SammyMoxie.jpg';
-import SammyMoxieCB from '../images/GD/Sammy/SammyCBBottle.jpg';
-import SammyMoxieTravel from '../images/GD/Sammy/SammyTravel.jpg';
+// import SammyMoxieCB from '../images/GD/Sammy/SammyCBBottle.jpg';
+// import SammyMoxieTravel from '../images/GD/Sammy/SammyTravel.jpg';
 import SammyMoxieMugs from '../images/GD/Sammy/SammyMugs.jpg';
 
 

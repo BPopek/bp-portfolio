@@ -2,9 +2,6 @@ import React, {Component} from 'react'
 import Iframe from 'react-iframe'
 
 class WebDesignAlta extends Component {
-    constructor(){
-        super()
-    }
 
     render(){
         return(

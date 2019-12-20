@@ -18,7 +18,7 @@ class GraphicDesignBA extends Component {
                 <Switch>
                     <Route path='/graphic-design/BlueAngels'>
                         <p className='projectDescriptiononSlideshow'>
-                            Xxxxxxxx.<br />
+                            Various Blue Angel designs created for sale at retail outlets as well as the Flight Deck Museum.<br />
                         </p>
                     <div className='carouselDiv'>
                             <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true}  >

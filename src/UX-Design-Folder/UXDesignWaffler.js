@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
-import { NavLink } from 'react-router-dom'
-import WafflerFullPage from '../images/UX/WW-Portfolio.jpg';
+// import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
+// import { NavLink } from 'react-router-dom'
+// import WafflerFullPage from '../images/UX/WW-Portfolio.jpg';
 import { Carousel } from 'react-responsive-carousel';
-import styles from 'react-responsive-carousel/lib/styles/carousel.min.css'
 
 import WafflerPage1 from '../images/UX/WW-Portfolio_Website_Pages-01-sm.jpg';
 import WafflerPage2 from '../images/UX/WW-Portfolio_Website_Pages-02-sm.jpg';
@@ -23,31 +22,31 @@ class UXDesignWaffler extends Component {
             <div className='carouselDiv'>
                 <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} showIndicators={true} showArrows={true} useKeyboardArrows={true}>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage1} />
+                                <img src={WafflerPage1}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage2} />
+                                <img src={WafflerPage2}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage3} />
+                                <img src={WafflerPage3}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage4} />
+                                <img src={WafflerPage4}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage5} />
+                                <img src={WafflerPage5}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage6} />
+                                <img src={WafflerPage6}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage7} />
+                                <img src={WafflerPage7}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage8} />
+                                <img src={WafflerPage8}  alt='Waffler Project'/>
                             </div>
                             <div className='imageCarouselUX'>
-                                <img src={WafflerPage9} />
+                                <img src={WafflerPage9}  alt='Waffler Project'/>
                             </div>
                         </Carousel>
             </div>
