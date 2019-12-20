@@ -16,7 +16,7 @@ class GraphicDesignMisc extends Component {
                 <Switch>
                     <Route path='/graphic-design/MISC'>
                         <p className='projectDescriptiononSlideshow'>
-                            xxxxxx.<br />
+                            Various cast metal items for the Boy Scouts of America.<br />Products shown include a belt buckle and bolo or neckerchief slides.
                         </p>
                     <div className='carouselDiv'>
                             <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true}  >
