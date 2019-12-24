@@ -20,6 +20,7 @@ $darkgrey: #666;
 }
 .homeContainer {
     display: grid;
+    position: relative;
     margin: 65px 50px 50px 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 267px;
@@ -121,7 +122,7 @@ $darkgrey: #666;
     z-index: 6;
     box-sizing: border-box;
 }
-.thumb {
+.designthumb {
     width: 150px;
     height: 200px;
     background-color: grey;
@@ -156,11 +157,12 @@ $darkgrey: #666;
         height: 300px;
     }
 }
-.projectParent{
+.projectParentRelative {
     position: relative;
     width: 150px;
     height: 200px;
     z-index: 5;
+    text-align: center;
 
     @media (min-width: 550px) {
         width: 150px;
@@ -170,10 +172,41 @@ $darkgrey: #666;
     //     width: 150px;
     // }
     @media (min-width: 900px) {
+        width: 175px;
+        height: 233px;
+    }
+    @media (min-width: 1100px) {
         width: 200px;
         height: 267px;
     }
+    @media (min-width: 1400px) {
+        width: 225px;
+        height: 300px;
+    }
+}
+.projectParentAbsolute {
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    z-index: 5;
+    top: 90px;
+
+    @media (min-width: 550px) {
+        width: 150px;
+        height: 200px;
+    }
+    // @media (min-width: 750px) {
+    //     width: 150px;
+    // }
+    @media (min-width: 900px) {
+        width: 175px;
+        height: 233px;
+    }
     @media (min-width: 1100px) {
+        width: 200px;
+        height: 267px;
+    }
+    @media (min-width: 1400px) {
         width: 225px;
         height: 300px;
     }
@@ -186,12 +219,12 @@ $darkgrey: #666;
 }
 .projectBar {
     background: rgba(255, 255, 255, 0.897);
-    position: absolute;
+    display: block;
     height: 50px;
     width: 125px;
     z-index: 3;
-    top: 80px;
     margin-left: 12.5px;
+    align-content: center;
     border: 2px white solid;
     box-sizing: border-box;
     box-shadow: $darkgrey 1px 1px 5px;
@@ -205,12 +238,10 @@ $darkgrey: #666;
     @media (min-width: 900px) {
         width: 150px;
         top: 100px;
-
     }
     @media (min-width: 1100px) {
         width: 175px;    
         top: 130px;
-
     }
     @media (min-width: 1400px) {
         width: 200px;    
@@ -218,10 +249,9 @@ $darkgrey: #666;
     }
 }
 .projectName {
-    display: absolute;
     font-family: $primaryHeaderFont;
+    display: block;
     font-size: 12px;
-    // color: $primaryAccentColor;
     color: black;
     text-decoration: none;
     z-index: 4;
@@ -232,6 +262,7 @@ $darkgrey: #666;
 }
 .projectType {
     font-family: $primaryMainFont;
+    display: block;
     font-size: 12px;
     font-weight: 600;
     color: $darkgrey;
@@ -271,7 +302,6 @@ $darkgrey: #666;
     font-family: $primaryMainFont;
     font-size: 12px
 }
-
 .profile {
     text-align: center;
     margin: 80px 0px 0px;    
@@ -280,7 +310,6 @@ $darkgrey: #666;
     text-align: center;
     margin-right: 35px;  
     margin-bottom: 75px; 
-
 }
 .welcome {
     font-family: $primaryMainFont;
@@ -406,7 +435,6 @@ $darkgrey: #666;
     text-align: left;
     line-height: 1.4;
     display: inline;
-
 
     @media (min-width: 700px) {
         font-size: 18px;

@@ -21,63 +21,77 @@ class GraphicDesign extends Component {
                 <Switch>
                     <div className='homeContainer'>
                         <Route path='/graphic-design'>
+                        <div className='projectParentRelative'>
                             <Link to="/graphic-design/CPO">
-                                <span className='projectParent'>
+                                <div className='projectParentAbsolute'>
                                     <div className='projectBar'>
                                         <h1 className='projectName'>Navy Chief</h1>
                                         <h2 className='projectType'>Graphic Design </h2>
                                     </div>
-                                </span>
-                                <img src={CPO1Thumb} className='thumb' alt='CPO Shirt Designs'></img>
+                                </div>
+                                <img src={CPO1Thumb} className='designthumb' alt='CPO Shirt Designs'></img>
                             </Link>
+                        </div>
+                        <div className='projectParentRelative'>
                             <Link to="/graphic-design/BC">
-                                <span className='projectParent'>
-                                    <div className='projectBar'>
-                                        <h1 className='projectName'>Breast Cancer</h1>
-                                        <h2 className='projectType'>Graphic Design </h2>
+                                    <div className='projectParentAbsolute'>
+                                        <div className='projectBar'>
+                                            <h1 className='projectName'>Breast Cancer</h1>
+                                            <h2 className='projectType'>Graphic Design </h2>
                                     </div>
-                                </span>
-                                <img src={BreastCancerTeesThumb} className='thumb' alt='Breast Cancer Designs'></img>
+                                </div>
+                                <img src={BreastCancerTeesThumb} className='designthumb' alt='Breast Cancer Designs'></img>
                             </Link>
+                        </div>
+                        <div className='projectParentRelative'>
                             <Link to='/graphic-design/BlueAngels'>
-                                <span className='projectParent'>
+                                <div className='projectParentAbsolute'>
                                     <div className='projectBar'>
                                         <h1 className='projectName'>Blue Angels</h1>
                                         <h2 className='projectType'>Graphic Design </h2>
                                     </div>
-                                </span>
-                                <img src={BlueAngels} className='thumb' alt='Blue Angels Designs'></img>
+                                </div>
+                                <img src={BlueAngels} className='designthumb' alt='Blue Angels Designs'></img>
                             </Link>
+                        </div>
+
+                        <div className='projectParentRelative'>
                             <Link to="/graphic-design/Sammy">
-                                <span className='projectParent'>
+                                <div className='projectParentAbsolute'>
                                     <div className='projectBar'>
                                         <h1 className='projectName'>Sammy Has Moxie</h1>
                                         <h2 className='projectType'>Graphic Design </h2>
                                     </div>
-                                </span>
-                                <img src={SammyMoxieThumb} className='thumb' alt='Sammy Has Moxie Designs'></img>
+                                </div>
+                                <img src={SammyMoxieThumb} className='designthumb' alt='Sammy Has Moxie Designs'></img>
                             </Link>
+                        </div>
+
+                        <div className='projectParentRelative'>
                             <Link to="/graphic-design/Print">
-                                <span className='projectParent'>
+                                <div className='projectParentAbsolute'>
                                     <div className='projectBar'>
                                         <h1 className='projectName'>Print Designs</h1>
                                         <h2 className='projectType'>Graphic Design </h2>
                                     </div>
-                                    </span>
-                                <img src={Catalog2018Thumb} className='thumb' alt='Catalog Designs'></img>
+                                    </div>
+                                <img src={Catalog2018Thumb} className='designthumb' alt='Catalog Designs'></img>
                             </Link>
+                        </div>
+
+                        <div className='projectParentRelative'>
                             <Link to='/graphic-design/MISC'>
-                    <span className='projectParent'>
-                        <div className='projectBar'>
-                                <h1 className='projectName'>Misc Designs</h1>
-                                <h2 className='projectType'>Graphic Design </h2>
-                            </div>
-                        </span>
-                    <img src={Misc} className='thumb' alt='Misc Designs'></img>
-                </Link>
+                                <div className='projectParent'>
+                                    <div className='projectBar'>
+                                        <h1 className='projectName'>Misc Designs</h1>
+                                        <h2 className='projectType'>Graphic Design </h2>
+                                    </div>
+                                </div>
+                            <img src={Misc} className='designthumb' alt='Misc Designs'></img>
+                            </Link>
+                        </div>
                         </Route>
                     </div>
-
                 </Switch>
             </div>
         )

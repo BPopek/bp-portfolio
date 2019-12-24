@@ -15,37 +15,43 @@ class WebDesign extends Component {
             <div className='homeContainer'>
                 <Switch>
                     <Route path='/web-design'>
+                    <div className='projectParentRelative'>
                         <Link to="/web-design/CooperHewitt">
-                            <span className='projectParent'>
+                            <div className='projectParentAbsolute'>
                                 <div className='projectBar'>
                                     <h1 className='projectName'>Cooper Hewitt</h1>
                                     <h2 className='projectType'>Web Design </h2>
                                 </div>
-                            </span>
-                            <img src={CHThumb} className='thumb' alt='Cooper Hewitt Project'></img>
+                            </div>
+                            <img src={CHThumb} className='designthumb' alt='Cooper Hewitt Project'></img>
                         </Link>
+                    </div>
+                    <div className='projectParentRelative'>
                         <Link to="/web-design/ClueMM">
-                            <span className='projectParent'>
-                                <div className='projectBar'>
-                                    <h1 className='projectName'>Clue Murder Mystery</h1>
-                                    <h2 className='projectType'>Web Design </h2>
-                                </div>
-                            </span>
-                            <img src={ClueMMThumb} className='thumb' alt='Clue Murder Mystery Project'></img>
-                            </Link>
-                        <Link to="/web-design/Alta">
-                            <span className='projectParent'>
-                                <div className='projectBar'>
-                                        <h1 className='projectName'>Alta Ski Area</h1>
-                                        <h2 className='projectType'>Web Design </h2>
-                                    </div>
-                            </span>
-                            <img src={Alta} className='thumb' alt='Alta Mockup Website'></img>
+                        <div className='projectParentAbsolute'>
+                            <div className='projectBar'>
+                                <h1 className='projectName'>Clue Murder Mystery</h1>
+                                <h2 className='projectType'>Web Design </h2>
+                            </div>
+                        </div>
+                        <img src={ClueMMThumb} className='designthumb' alt='Clue Murder Mystery Project'></img>
                         </Link>
+                    </div>
+
+                    <div className='projectParentRelative'>
+                        <Link to="/web-design/Alta">   
+                        <div className='projectParentAbsolute'>
+                            <div className='projectBar'>
+                                <h1 className='projectName'>Alta Ski Area</h1>
+                                <h2 className='projectType'>Web Design </h2>
+                            </div>
+                        </div>
+                        <img src={Alta} className='designthumb' alt='Alta Mockup Website'></img>
+                        </Link>
+                    </div>
                     </Route>
                 </Switch>
             </div>
-
         )
     }
 }
