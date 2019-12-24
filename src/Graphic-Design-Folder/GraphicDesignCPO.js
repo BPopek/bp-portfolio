@@ -24,7 +24,7 @@ class GraphicDesignCPO extends Component {
                             Various designs created for the US Navy Chief Petty Officer Selectees.<br />T-shirts are worn during Fleet Week activities, which include training runs and exercises.<br /> There are also volunteer opportunities in the community.
                         </p>
                     <div className='carouselDiv'>
-                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true}  >
+                    <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'10s'}>
                                 <div className='imageCarousel'>
                                     <img src={CPO1} alt='CPO Shirt Designs'/>
                                 </div>

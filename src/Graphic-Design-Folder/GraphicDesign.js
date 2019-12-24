@@ -54,7 +54,6 @@ class GraphicDesign extends Component {
                                 <img src={BlueAngels} className='designthumb' alt='Blue Angels Designs'></img>
                             </Link>
                         </div>
-
                         <div className='projectParentRelative'>
                             <Link to="/graphic-design/Sammy">
                                 <div className='projectParentAbsolute'>
@@ -66,7 +65,6 @@ class GraphicDesign extends Component {
                                 <img src={SammyMoxieThumb} className='designthumb' alt='Sammy Has Moxie Designs'></img>
                             </Link>
                         </div>
-
                         <div className='projectParentRelative'>
                             <Link to="/graphic-design/Print">
                                 <div className='projectParentAbsolute'>
@@ -78,10 +76,9 @@ class GraphicDesign extends Component {
                                 <img src={Catalog2018Thumb} className='designthumb' alt='Catalog Designs'></img>
                             </Link>
                         </div>
-
                         <div className='projectParentRelative'>
                             <Link to='/graphic-design/MISC'>
-                                <div className='projectParent'>
+                                <div className='projectParentAbsolute'>
                                     <div className='projectBar'>
                                         <h1 className='projectName'>Misc Designs</h1>
                                         <h2 className='projectType'>Graphic Design </h2>

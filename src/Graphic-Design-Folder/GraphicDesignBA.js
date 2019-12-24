@@ -21,7 +21,7 @@ class GraphicDesignBA extends Component {
                             Various Blue Angel designs created for sale at retail outlets as well as the Flight Deck Museum.<br />
                         </p>
                     <div className='carouselDiv'>
-                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'5s'}>
+                            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'10s'}>
                                 <div className='imageCarousel'>
                                     <img src={BA1} alt='Blue Angels Hoodie Design'/>
                                 </div>
