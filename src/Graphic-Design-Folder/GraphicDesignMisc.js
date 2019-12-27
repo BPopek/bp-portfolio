@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 //images for BC carousel
 import misc1 from '../images/GD/MISC/IMG_4730.jpg'
-import misc2 from '../images/GD/MISC/IMG_4829.jpg'
+import misc2 from '../images/GD/MISC/IMG_4829.JPG'
 import misc3 from '../images/GD/MISC/IMG_4830.jpg'
 
 class GraphicDesignMisc extends Component {
@@ -19,7 +19,7 @@ class GraphicDesignMisc extends Component {
                             Various cast metal items for the Boy Scouts of America.<br />Products shown include a belt buckle and bolo or neckerchief slides.
                         </p>
                     <div className='carouselDiv'>
-                    <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'15s'}>
+                        <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'15s'}>
                                 <div className='imageCarousel'>
                                     <img src={misc1} alt='Boy Scout Jamboree Belt Buckle'/>
                                 </div>

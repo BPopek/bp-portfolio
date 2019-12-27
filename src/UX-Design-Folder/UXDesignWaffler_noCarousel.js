@@ -5,15 +5,15 @@ import React, {Component} from 'react';
 // import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-import WafflerPage1 from '../images/UX_WW-Portfolio_Website_Pages-01-sm.jpg';
-import WafflerPage2 from '../images/UX_WW-Portfolio_Website_Pages-02-sm.jpg';
-import WafflerPage3 from '../images/UX_WW-Portfolio_Website_Pages-03-sm.jpg';
-import WafflerPage4 from '../images/UX_WW-Portfolio_Website_Pages-04-sm.jpg';
-import WafflerPage5 from '../images/UX_WW-Portfolio_Website_Pages-05-sm.jpg';
-import WafflerPage6 from '../images/UX_WW-Portfolio_Website_Pages-06-sm.jpg';
-import WafflerPage7 from '../images/UX_WW-Portfolio_Website_Pages-07-sm.jpg';
-import WafflerPage8 from '../images/UX_WW-Portfolio_Website_Pages-08-sm.jpg';
-import WafflerPage9 from '../images/UX_WW-Portfolio_Website_Pages-09-sm.jpg';
+// import WafflerPage1 from '../images/UX_WW-Portfolio_Website_Pages-01-sm.jpg';
+// import WafflerPage2 from '../images/UX_WW-Portfolio_Website_Pages-02-sm.jpg';
+// import WafflerPage3 from '../images/UX_WW-Portfolio_Website_Pages-03-sm.jpg';
+// import WafflerPage4 from '../images/UX_WW-Portfolio_Website_Pages-04-sm.jpg';
+// import WafflerPage5 from '../images/UX_WW-Portfolio_Website_Pages-05-sm.jpg';
+// import WafflerPage6 from '../images/UX_WW-Portfolio_Website_Pages-06-sm.jpg';
+// import WafflerPage7 from '../images/UX_WW-Portfolio_Website_Pages-07-sm.jpg';
+// import WafflerPage8 from '../images/UX_WW-Portfolio_Website_Pages-08-sm.jpg';
+// import WafflerPage9 from '../images/UX_WW-Portfolio_Website_Pages-09-sm.jpg';
 
 class UXDesignWafflernoCarousel extends Component {
 
@@ -50,7 +50,7 @@ class UXDesignWafflernoCarousel extends Component {
                                 <img src={WafflerPage9}  alt='Waffler Project'/>
                             </div>
                         </Carousel> */}
-                        <img src={WafflerPage1}  className='waffler' alt='Waffler Project'/>
+                        {/* <img src={WafflerPage1}  className='waffler' alt='Waffler Project'/>
                         <img src={WafflerPage2} className='waffler' alt='Waffler Project'/>
                         <img src={WafflerPage3} className='waffler' alt='Waffler Project'/>
                         <img src={WafflerPage4} className='waffler' alt='Waffler Project'/>
@@ -58,7 +58,7 @@ class UXDesignWafflernoCarousel extends Component {
                         <img src={WafflerPage6} className='waffler' alt='Waffler Project'/>
                         <img src={WafflerPage7} className='waffler' alt='Waffler Project'/>
                         <img src={WafflerPage8} className='waffler' alt='Waffler Project'/>
-                        <img src={WafflerPage9} className='waffler' alt='Waffler Project'/>
+                        <img src={WafflerPage9} className='waffler' alt='Waffler Project'/> */}
 
             </div>
         )

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 // import {Link} from 'react-router-dom';
-import UXDesignWaffler from './UXDesignWaffler_noCarousel';
+import UXDesignWaffler from './UXDesignWaffler';
 
 class UXDesignContainer extends Component {
 

@@ -3,7 +3,6 @@ import '../appMainStyles.scss';
 import '../pageDesignStyles.scss';
 
 import {Switch, Route} from 'react-router-dom'
-import UXDesignContainer from '../UX-Design-Folder/UXDesignContainer';
 import Home from './Home';
 
 import WebDesignContainer from '../Web-Design-Folder/WebDesignContainer';
@@ -17,10 +16,12 @@ import GraphicDesignBC from '../Graphic-Design-Folder/GraphicDesignBC';
 import GraphicDesignSammy from '../Graphic-Design-Folder/GraphicDesignSammy';
 import GraphicDesignPrint from '../Graphic-Design-Folder/GraphicDesignPrint';
 import GraphicDesignBA from '../Graphic-Design-Folder/GraphicDesignBA';
+import GraphicDesignMisc from '../Graphic-Design-Folder/GraphicDesignMisc';
 
 import Profile from './Profile';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import UXDesignContainer from '../UX-Design-Folder/UXDesignContainer';
 import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
 
 class App extends Component {
@@ -40,8 +41,8 @@ class App extends Component {
               <Route exact path='/graphic-design/BC' component={GraphicDesignBC} />
               <Route exact path='/graphic-design/Sammy' component={GraphicDesignSammy} />
               <Route exact path='/graphic-design/BlueAngels' component={GraphicDesignBA} />
-
               <Route exact path='/graphic-design/Print' component={GraphicDesignPrint} />
+              <Route exact path='/graphic-design/MISC' component={GraphicDesignMisc} />
               <Route exact path='/ux-design' component={UXDesignContainer} />
               <Route exact path='/ux-design/waffler' component={UXDesignWafflerFullPage} />
               <Route path='/profile' component={Profile} />
