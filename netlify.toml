@@ -1,0 +1,31 @@
+[[redirects]]
+    from = "/graphic-design"
+    to = "betsypopek.com/graphic-design"
+    status = 301
+    force = true
+    query = {path = ":path"}
+    conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+    from = "/web-design"
+    to = "betsypopek.com/web-design"
+    status = 301
+    force = true
+    query = {path = ":path"}
+    conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+    from = "/ux-design"
+    to = "betsypopek.com/ux-design"
+    status = 301
+    force = true
+    query = {path = ":path"}
+    conditions = {Language = ["en","es"], Country = ["US"]}
+
+[[redirects]]
+    from = "/profile"
+    to = "betsypopek.com/profile"
+    status = 301
+    force = true
+    query = {path = ":path"}
+    conditions = {Language = ["en","es"], Country = ["US"]}

@@ -5,6 +5,8 @@ $primaryHeaderFont: Montserrat;
 $primaryMainFont: Raleway;
 $primaryAccentColor: #055168;
 $secondAccentColor: #617;
+$code: #B01055;
+
 $primaryBackgroundColor: #dedede;
 $darkgrey: #666;
 
@@ -343,7 +345,7 @@ $darkgrey: #666;
         color: $primaryAccentColor;
         transform: scale(1.25, 1.25);
         transition: ease-in-out 250ms;
-     }
+    }
 
     @media (min-width: 400px) {
         font-size: 16px;
@@ -391,6 +393,7 @@ $darkgrey: #666;
     }
     @media (min-width: 1000px) {
         font-size: 20px;
+        margin: 15px 75px 0px;
     }
 }
 .profileSmHead {
@@ -408,6 +411,7 @@ $darkgrey: #666;
     }
     @media (min-width: 1000px) {
         font-size: 20px;
+        margin: 3px 0px 0px 75px;
     }
 }
 .profileSmHeadPhone {
@@ -426,6 +430,7 @@ $darkgrey: #666;
     }
     @media (min-width: 1000px) {
         font-size: 20px;
+        margin: 3px 0px 40px 75px;
     }
 }
 .profileDetail {

@@ -24,7 +24,7 @@ class GraphicDesignBC extends Component {
                             A sample of designs created for AAFES stores to sell during Breast Cancer Month.<br />Designs are inspired by current trends as well as feedback from stores, managers and our military reps.
                         </p>
                     <div className='carouselDiv'>
-                    <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'10s'}>
+                    <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'15s'}>
                                 <div className='imageCarousel'>
                                     <img src={BC2} alt='Breast Cancer Shirt Design'/>
                                 </div>
