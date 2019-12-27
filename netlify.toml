@@ -29,5 +29,3 @@
     force = true
     query = {path = ":path"}
     conditions = {Language = ["en","es"], Country = ["US"]}
-
-/* /index.html 200
