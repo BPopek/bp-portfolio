@@ -20,7 +20,7 @@ class GraphicDesignPrint extends Component {
                                 A sample of print design including a variety of catalogs and print ads.<br />
                             </p>
                         <div className='carouselDiv'>
-                        <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={'15s'}>
+                        <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={300}>
                                     <div className='imageCarousel'>
                                         <img src={Catalog2018} alt='2018 Catalog'/>
                                     </div>

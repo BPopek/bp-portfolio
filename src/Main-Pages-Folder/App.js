@@ -9,6 +9,7 @@ import WebDesignContainer from '../Web-Design-Folder/WebDesignContainer';
 import WebDesignAlta from '../Web-Design-Folder/WebDesignAlta';
 import WebDesignCH from '../Web-Design-Folder/WebDesignCH';
 import WebDesignClueMM from '../Web-Design-Folder/WebDesignClueMM';
+import WebDesignOrdino from '../Web-Design-Folder/WebDesignOrdino';
 
 import GraphicDesignContainer from '../Graphic-Design-Folder/GraphicDesignContainer';
 import GraphicDesignCPO from '../Graphic-Design-Folder/GraphicDesignCPO';
@@ -22,7 +23,7 @@ import Profile from './Profile';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import UXDesignContainer from '../UX-Design-Folder/UXDesignContainer';
-import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
+// import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
 
 class App extends Component {
   
@@ -33,6 +34,7 @@ class App extends Component {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/web-design' component={WebDesignContainer} />
+              <Route exact path='/web-design/Ordino' component={WebDesignOrdino} />
               <Route exact path='/web-design/Alta' component={WebDesignAlta} />
               <Route exact path='/web-design/CooperHewitt' component={WebDesignCH} />
               <Route exact path='/web-design/ClueMM' component={WebDesignClueMM} />
@@ -44,7 +46,7 @@ class App extends Component {
               <Route exact path='/graphic-design/Print' component={GraphicDesignPrint} />
               <Route exact path='/graphic-design/MISC' component={GraphicDesignMisc} />
               <Route exact path='/ux-design' component={UXDesignContainer} />
-              <Route exact path='/ux-design/waffler' component={UXDesignWafflerFullPage} />
+              {/* <Route exact path='/ux-design/waffler' component={UXDesignWafflerFullPage} /> */}
               <Route path='/profile' component={Profile} />
               {/* <Route Path='/ux-design-waffler'>
                 <UXDesignWafflerFullPage />
