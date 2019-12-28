@@ -7,7 +7,7 @@ class WebDesignOrdino extends Component {
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>
-                    <a href="https://github.com/BPopek/ordino-job-organizer" className='projectLinkWebPage'>Ordino Job Organizer</a> 
+                    <a href="https://ordino-job-organizer.herokuapp.com/" className='projectLinkWebPage'>Ordino Job Organizer</a> 
                     <br></br>
                     <a href="https://github.com/BPopek/ordino-job-organizer" className='projectLinkWebPage'>Visit Github Repository</a>
                 </div>
