@@ -8,6 +8,7 @@ class WebDesignOrdino extends Component {
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>
                     <a href="https://ordino-job-organizer.herokuapp.com/" className='projectLinkWebPage'>Ordino Job Organizer</a> 
+                    <p className='projectDescriptionOrdino'>Sample account available for viewing functionality. Username and password are both 'test'. </p>
                     <br></br>
                     <a href="https://github.com/BPopek/ordino-job-organizer" className='projectLinkWebPage'>Visit Github Repository</a>
                 </div>

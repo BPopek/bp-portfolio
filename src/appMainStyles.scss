@@ -5,11 +5,11 @@
 
 $primaryHeaderFont: Montserrat;
 $primaryMainFont: Raleway;
-$primaryAccentColor: #055168;
+$primaryAccentColor: #2382a5;
 $secondAccentColor: #617;
 $code: #B01055;
 
-$primaryBackgroundColor: #dedede;
+$primaryBackgroundColor: #d1d1d1;
 $darkgrey: #666;
 
 * {
@@ -56,7 +56,7 @@ $darkgrey: #666;
         column-gap: 40px;
     }
     @media (min-width: 1400px) {
-        margin: 75px;
+        margin-top: 100px;
         row-gap: 50px;
         column-gap: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -66,28 +66,38 @@ $darkgrey: #666;
     font-family: $primaryHeaderFont;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
     color: black;
     letter-spacing: .35px;
+    line-height: 1.4;
 
     &:hover {
         color: $primaryAccentColor;
     }
+    @media (min-width: 400px) {
+        font-size: 14px;
+    }
+    @media (min-width: 750px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
 }
 .footCont {
-    background-color: #dedede;
+    background-color: $primaryBackgroundColor;
     display: flex;
     position: fixed;
     bottom: 0px;
     width: 100vw;
     height: 40px;
+    padding: 10px;
     line-height: 40px;
     justify-content: space-evenly;
     text-align: center;
     z-index: 5;
+    box-sizing: border-box;
 }
-.navbarLink{
+.navbarLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
     font-weight: 600;
@@ -137,7 +147,7 @@ $darkgrey: #666;
 .designthumb {
     width: 150px;
     height: 200px;
-    background-color: grey;
+    background-color: $darkgrey;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -147,7 +157,7 @@ $darkgrey: #666;
     border-radius: 2px;
     z-index: 0;
     margin: 0;
-    box-shadow: lightgrey 3px 3px 10px;
+    box-shadow: $primaryBackgroundColor 3px 3px 10px;
 
     @media (min-width: 550px) {
         width: 150px;
@@ -288,7 +298,7 @@ $darkgrey: #666;
     position: relative;
     top: 0;
     left: 0;
-    border: 1px solid grey;
+    border: 1px solid $darkgrey;
     width: 300px;
     height: 198px;
     margin: auto;

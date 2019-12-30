@@ -18,35 +18,37 @@ class UXDesignWaffler extends Component {
 
     render(){
         return(
-            <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={300}>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage1}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage2}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage3}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage4}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage5}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage6}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage7}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage8}  alt='Waffler Project'/>
-                </div>
-                <div className='imageCarouselUX'>
-                    <img src={WafflerPage9}  alt='Waffler Project'/>
-                </div>
-            </Carousel>
+            <div className='parentDiv'>
+                <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={300}>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage1}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage2}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage3}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage4}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage5}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage6}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage7}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage8}  alt='Waffler Project'/>
+                    </div>
+                    <div className='imageCarouselUX'>
+                        <img src={WafflerPage9}  alt='Waffler Project'/>
+                    </div>
+                </Carousel>
+            </div>
         )
     }
 }
