@@ -362,6 +362,7 @@ $darkgrey: #666;
     color: $secondAccentColor;
     font-weight: 600;
     letter-spacing: .4px;
+    display: inline-block;
 
     &:hover {
         color: $primaryAccentColor;
