@@ -24,7 +24,7 @@ function Profile () {
             <h5 className='profileHeader'>Contact:</h5>
             {/* <p className='profileSmHead'>Email: <span className='profileDetail'>betsypopek@gmail.com</span></p> */}
             <p className='profileSmHead'>Email: <a href="mailto:betsypopek@gmail.com" className='profileDetailEmail'>betsypopek@gmail.com</a></p>
-            <p className='profileSmHeadPhone'>Phone: <span className='profileDetail'>603.682.7185</span></p>
+            <p className='profileSmHeadPhone'>Phone: <span className='profileDetail'>801-448-7273</span></p>
             <a download href={BPopekResume}  className='resumeLink'>DOWNLOAD RESUME</a>
         </div>
         </>

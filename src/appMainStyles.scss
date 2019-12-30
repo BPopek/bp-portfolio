@@ -80,7 +80,7 @@ $darkgrey: #666;
     }
     @media (min-width: 750px) {
         font-size: 16px;
-        line-height: 1.50;
+        line-height: 1.5;
     }
 }
 .footCont {
@@ -333,7 +333,7 @@ $darkgrey: #666;
 .profile2 {
     text-align: center;
     margin-right: 35px;  
-    margin-bottom: 75px; 
+    margin-bottom: 100px; 
 }
 .welcome {
     font-family: $primaryMainFont;
@@ -366,7 +366,7 @@ $darkgrey: #666;
     &:hover {
         color: $primaryAccentColor;
         transform: scale(1.25, 1.25);
-        transition: ease-in-out 250ms;
+        transition: ease-in-out 500ms;
     }
 
     @media (min-width: 400px) {
@@ -497,14 +497,14 @@ $darkgrey: #666;
 }
 .resumeLink {
     font-family: $primaryMainFont;
-    margin: 25px 35px 100px 35px;
+    margin: 35px 35px 125px;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
     background-color: $primaryAccentColor;
     color: white;
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
 
     &:hover {
