@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 //WEB COMPONENTS
+import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
 import Ordino from '../images/Web/Ordino-thumb.png';
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
 import ClueMMThumb from '../images/Web/clueMM-thumb.png';
@@ -23,6 +24,18 @@ class Home extends Component {
     render(){
         return(
             <div className='homeContainer'>
+            <div className='projectParentRelative'>
+                    <Link to="/web-design/DjLuvaLuva">
+                        <div className='projectParentAbsolute'>
+                            <div className='projectBar'>
+                                <h1 className='projectName'>DJ Luva Luva</h1>
+                                <h2 className='projectType'>Web Design </h2>
+                            </div>
+                        </div>
+                        <img src={DJLuvaLuva} className='designthumb' alt='DJ Luva Luva Homepage'></img>
+                    </Link>
+                </div>
+
                 <div className='projectParentRelative'>
                     <Link to="/web-design/Ordino">
                         <div className='projectParentAbsolute'>

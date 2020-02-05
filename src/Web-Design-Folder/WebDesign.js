@@ -7,6 +7,7 @@ import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
 import ClueMMThumb from '../images/Web/clueMM-thumb.png';
 import Alta from '../images/Web/Alta-thumb.png';
 import Ordino from '../images/Web/Ordino-thumb.png';
+import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
 
 class WebDesign extends Component {
     render(){
@@ -15,6 +16,17 @@ class WebDesign extends Component {
                 <Switch>
                     <Route path='/web-design'>
 
+                    <div className='projectParentRelative'>
+                        <Link to="/web-design/DjLuvaLuva">
+                            <div className='projectParentAbsolute'>
+                                <div className='projectBar'>
+                                    <h1 className='projectName'>DJ Luva Luva</h1>
+                                    <h2 className='projectType'>Web Design </h2>
+                                </div>
+                            </div>
+                        <img src={DJLuvaLuva} className='designthumb' alt='DJ Luva Luva Homepage'></img>
+                        </Link>
+                    </div>
                     <div className='projectParentRelative'>
                         <Link to="/web-design/Ordino">
                         <div className='projectParentAbsolute'>

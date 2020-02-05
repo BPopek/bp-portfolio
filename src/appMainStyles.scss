@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800|Raleway:400,600,800|Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800|Raleway:400,600,800|Courier+Prime&display=swap');
 
 @import "image-gallery.scss";
 @import "carousel.css";
@@ -10,6 +10,7 @@ $secondAccentColor: #617;
 $code: #B01055;
 
 $primaryBackgroundColor: #d1d1d1;
+$medgrey: #d1d1d1;
 $darkgrey: #666;
 
 * {
@@ -337,7 +338,7 @@ $darkgrey: #666;
 }
 .welcome {
     font-family: $primaryMainFont;
-    margin: 25px 35px 0px;
+    margin: 25px 35px 15px;
     font-size: 15px;
     line-height: 1.4;
     letter-spacing: .5px;
@@ -348,16 +349,16 @@ $darkgrey: #666;
     }
     @media (min-width: 700px) {
         font-size: 18px;
-        margin: 40px 35px 0px;
+        margin: 40px 35px 15px;
     }
     @media (min-width: 1000px) {
         font-size: 24px;
-        margin: 50px 35px 0px;
+        margin: 50px 35px 15px;
     }
 }
 .careerCode {
     font-family: 'Courier New', Courier, monospace;
-    margin: 10px 25px 0px;
+    margin: 10px 25px;
     font-size: 15px;
     color: $secondAccentColor;
     font-weight: 600;
@@ -365,9 +366,8 @@ $darkgrey: #666;
     display: inline-block;
 
     &:hover {
-        color: $primaryAccentColor;
-        transform: scale(1.25, 1.25);
-        transition: ease-in-out 500ms;
+        -webkit-animation: text-shadow-pop-bottom 2s ease forwards;
+        animation: text-shadow-pop-bottom 2s ease forwards;
     }
 
     @media (min-width: 400px) {
@@ -375,31 +375,74 @@ $darkgrey: #666;
     }
     @media (min-width: 700px) {
         font-size: 18px;
-        margin: 20px 25px 0px;
+        margin: 20px 25px 10px;
     }
     @media (min-width: 1000px) {
         font-size: 24px;
-        margin: 40px 35px 0px;
+        margin: 40px 35px 10px;
     }
 }
+@-webkit-keyframes text-shadow-pop-bottom {
+    0% {
+      text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
+      transform: scale(1, 1);
+    //   -webkit-transform: translateY(0);
+    //           transform: translateY(0);
+    }
+    50% {
+      text-shadow: 0 1px 3px $medgrey, 0 2px $medgrey, 0 3px $medgrey, 0 4px $medgrey, 0 5px $medgrey, 0 6px $medgrey, 0 7px $medgrey, 0 8px 3px  $medgrey;
+      transform: scale(1.25, 1.25);
+      color: $primaryAccentColor;
+    //   -webkit-transform: translateY(-8px);
+    //           transform: translateY(-8px);
+    }
+    100% {
+        text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
+        transform: scale(1, 1);
+      //   -webkit-transform: translateY(0);
+      //           transform: translateY(0);
+      }
+  }
+  @keyframes text-shadow-pop-bottom {
+    0% {
+      text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
+      transform: scale(1, 1);
+    //   -webkit-transform: translateY(0);
+    //           transform: translateY(0);
+    }
+    50% {
+      text-shadow: 0 1px $medgrey, 0 2px $medgrey, 0 3px $medgrey, 0 4px $medgrey, 0 5px $medgrey, 0 6px $medgrey, 0 7px $medgrey, 0 8px 3px  $medgrey;
+      transform: scale(1.25, 1.25);
+      color: $primaryAccentColor;
+
+    //   -webkit-transform: translateY(-8px);
+    //           transform: translateY(-8px);
+    }
+    100% {
+        text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
+        transform: scale(1, 1);
+      //   -webkit-transform: translateY(0);
+      //           transform: translateY(0);
+      }
+  }
 .profileHistory {
     font-family: $primaryMainFont;
-    margin: 10px 35px 0px;
+    margin: 1px 35px;
     font-size: 15px;
     text-align: left;
     line-height: 1.4;
 
     @media (min-width: 400px) {
-        margin: 15px 35px 0px; 
+        margin: 15px 35px 20px; 
     }
     @media (min-width: 700px) {
         font-size: 18px;
-        margin: 20px 35px 0px;    
+        margin: 20px 35px 25px;    
         line-height: 1.5;
     }
     @media (min-width: 1000px) {
         font-size: 18px;
-        margin: 40px 75px 0px;
+        margin: 40px 75px;
         line-height: 1.6;
     }
 }
@@ -407,16 +450,54 @@ $darkgrey: #666;
     font-family: $primaryMainFont;
     color: $primaryAccentColor;
     margin: 15px 35px 0px;
-    font-size: 16px;
+    font-size: 17px;
     text-align: left;
     line-height: 1.4;
+    font-weight: 600;
 
     @media (min-width: 700px) {
-        font-size: 18px;
+        font-size: 19px;
     }
     @media (min-width: 1000px) {
-        font-size: 20px;
+        font-size: 21px;
         margin: 15px 75px 0px;
+    }
+}
+.profileLineSD {
+    width: 378px;
+    margin: 0px 35px;
+    border: 1px solid $medgrey;
+
+    @media (min-width: 700px) {
+        width: 430px;
+    }
+    @media (min-width: 1000px) {
+        width: 476px;
+        margin: 0px 75px;
+    }
+}
+.profileLineD {
+    width: 385px;
+    margin: 0px 35px;
+    border: 1px solid $medgrey;
+    @media (min-width: 700px) {
+        width: 445px;
+    }
+    @media (min-width: 1000px) {
+        width: 495px;
+        margin: 0px 75px;
+    }
+}
+.profileLineC {
+    width: 224px;
+    margin: 0px 35px;
+    border: 1px solid $medgrey;
+    @media (min-width: 700px) {
+        width: 255px;
+    }
+    @media (min-width: 1000px) {
+        width: 282px;
+        margin: 0px 75px;
     }
 }
 .profileSmHead {
@@ -440,7 +521,7 @@ $darkgrey: #666;
 .profileSmHeadPhone {
     font-family: $primaryMainFont;
     font-weight: 600;
-    margin: 3px 0px 20px 35px;
+    margin: 3px 0px 30px 35px;
     font-size: 15px;
     text-align: left;
     line-height: 1.4;
@@ -484,9 +565,8 @@ $darkgrey: #666;
     color: black;
 
     &:hover {
-        color: $secondAccentColor
+        animation: email-hover 2.5s ease-in-out infinite;
     }
-
     @media (min-width: 700px) {
         font-size: 18px;
         margin: 20px 0px 0px;
@@ -496,9 +576,24 @@ $darkgrey: #666;
         margin: 20px 0px 0px;
     }
 }
+@keyframes email-hover {
+    0% {
+        color: $secondAccentColor;
+        font-weight: 600;
+    }
+    50% {
+        color: $primaryAccentColor;        
+        font-weight: 600;
+    }
+    100% {
+        color: $secondAccentColor;
+        font-weight: 600;
+    }
+   
+}
 .resumeLink {
     font-family: $primaryMainFont;
-    margin: 35px 35px 125px;
+    margin: 35px 35px 125px 35px;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
