@@ -8,6 +8,8 @@ $primaryMainFont: Raleway;
 $primaryAccentColor: #2382a5;
 $secondAccentColor: #617;
 $code: #B01055;
+$code: rgb(212, 91, 87);
+
 
 $primaryBackgroundColor: #d1d1d1;
 $medgrey: #d1d1d1;
@@ -366,8 +368,8 @@ $darkgrey: #666;
     display: inline-block;
 
     &:hover {
-        -webkit-animation: text-shadow-pop-bottom 2s ease forwards;
-        animation: text-shadow-pop-bottom 2s ease forwards;
+        -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;
+        animation: text-shadow-pop-bottom 3s ease forwards infinite;
     }
 
     @media (min-width: 400px) {
@@ -390,7 +392,7 @@ $darkgrey: #666;
     //           transform: translateY(0);
     }
     50% {
-      text-shadow: 0 1px 3px $medgrey, 0 2px $medgrey, 0 3px $medgrey, 0 4px $medgrey, 0 5px $medgrey, 0 6px $medgrey, 0 7px $medgrey, 0 8px 3px  $medgrey;
+      text-shadow: 0 1px 3px 2px $medgrey, 0 2px 2px $medgrey, 0 3px 2px $medgrey, 0 4px 2px $medgrey, 0 5px 5px $medgrey, 0 6px 5px $medgrey, 0 7px 5px $medgrey;
       transform: scale(1.25, 1.25);
       color: $primaryAccentColor;
     //   -webkit-transform: translateY(-8px);
@@ -411,7 +413,7 @@ $darkgrey: #666;
     //           transform: translateY(0);
     }
     50% {
-      text-shadow: 0 1px $medgrey, 0 2px $medgrey, 0 3px $medgrey, 0 4px $medgrey, 0 5px $medgrey, 0 6px $medgrey, 0 7px $medgrey, 0 8px 3px  $medgrey;
+      text-shadow: 0 1px 2px $medgrey, 0 2px 2px $medgrey, 0 3px 2px $medgrey, 0 4px 2px $medgrey, 0 5px 5px $medgrey, 0 6px 5px $medgrey, 0 7px 5px $medgrey;
       transform: scale(1.25, 1.25);
       color: $primaryAccentColor;
 
@@ -565,7 +567,7 @@ $darkgrey: #666;
     color: black;
 
     &:hover {
-        animation: email-hover 2.5s ease-in-out infinite;
+        animation: email-hover 4s ease infinite;
     }
     @media (min-width: 700px) {
         font-size: 18px;
@@ -577,19 +579,16 @@ $darkgrey: #666;
     }
 }
 @keyframes email-hover {
-    0% {
+    
+    15% {
         color: $secondAccentColor;
-        font-weight: 600;
     }
     50% {
         color: $primaryAccentColor;        
-        font-weight: 600;
     }
     100% {
         color: $secondAccentColor;
-        font-weight: 600;
     }
-   
 }
 .resumeLink {
     font-family: $primaryMainFont;
