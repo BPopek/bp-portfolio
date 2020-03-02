@@ -388,29 +388,25 @@ $darkgrey: #666;
     0% {
       text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
       transform: scale(1, 1);
-    //   -webkit-transform: translateY(0);
-    //           transform: translateY(0);
+
     }
     50% {
       text-shadow: 0 1px 3px 2px $medgrey, 0 2px 2px $medgrey, 0 3px 2px $medgrey, 0 4px 2px $medgrey, 0 5px 5px $medgrey, 0 6px 5px $medgrey, 0 7px 5px $medgrey;
       transform: scale(1.25, 1.25);
       color: $primaryAccentColor;
-    //   -webkit-transform: translateY(-8px);
-    //           transform: translateY(-8px);
+ 
     }
     100% {
         text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
         transform: scale(1, 1);
-      //   -webkit-transform: translateY(0);
-      //           transform: translateY(0);
+  
       }
   }
   @keyframes text-shadow-pop-bottom {
     0% {
       text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
       transform: scale(1, 1);
-    //   -webkit-transform: translateY(0);
-    //           transform: translateY(0);
+
     }
     50% {
       text-shadow: 0 1px 2px $medgrey, 0 2px 2px $medgrey, 0 3px 2px $medgrey, 0 4px 2px $medgrey, 0 5px 5px $medgrey, 0 6px 5px $medgrey, 0 7px 5px $medgrey;
