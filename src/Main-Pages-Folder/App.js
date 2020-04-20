@@ -11,6 +11,7 @@ import WebDesignCH from '../Web-Design-Folder/WebDesignCH';
 import WebDesignClueMM from '../Web-Design-Folder/WebDesignClueMM';
 import WebDesignOrdino from '../Web-Design-Folder/WebDesignOrdino';
 import WebDesignDJLuvaLuva from '../Web-Design-Folder/WebDesignDJLuvaLuva';
+import WebDesignSchittsCreek from '../Web-Design-Folder/WebDesignSchittsCreek';
 
 import GraphicDesignContainer from '../Graphic-Design-Folder/GraphicDesignContainer';
 import GraphicDesignCPO from '../Graphic-Design-Folder/GraphicDesignCPO';
@@ -35,6 +36,7 @@ class App extends Component {
             <Switch>
               <Route exact path='/' component={Home} />
               <Route exact path='/web-design' component={WebDesignContainer} />
+              <Route exact path='/web-design/SchittsCreek' component={WebDesignSchittsCreek} />
               <Route exact path='/web-design/DjLuvaLuva' component={WebDesignDJLuvaLuva} />
               <Route exact path='/web-design/Ordino' component={WebDesignOrdino} />
               <Route exact path='/web-design/Alta' component={WebDesignAlta} />

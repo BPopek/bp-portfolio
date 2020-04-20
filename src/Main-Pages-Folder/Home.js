@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 //WEB COMPONENTS
+import SchittsCreek from '../images/Web/Schitts-Creek-thumb.png';
 import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
 import Ordino from '../images/Web/Ordino-thumb.png';
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
@@ -24,7 +25,20 @@ class Home extends Component {
     render(){
         return(
             <div className='homeContainer'>
-            <div className='projectParentRelative'>
+
+                <div className='projectParentRelative'>
+                    <Link to="/web-design/SchittsCreek">
+                        <div className='projectParentAbsolute'>
+                            <div className='projectBar'>
+                                <h1 className='projectName'>Schitt's Creek Trivia</h1>
+                                <h2 className='projectType'>Web Design </h2>
+                            </div>
+                        </div>
+                    <img src={SchittsCreek} className='designthumb' alt="Schitt's Creek Fan Homepage"></img>
+                    </Link>
+                </div>
+
+                <div className='projectParentRelative'>
                     <Link to="/web-design/DjLuvaLuva">
                         <div className='projectParentAbsolute'>
                             <div className='projectBar'>

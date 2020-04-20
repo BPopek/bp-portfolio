@@ -8,6 +8,7 @@ import ClueMMThumb from '../images/Web/clueMM-thumb.png';
 import Alta from '../images/Web/Alta-thumb.png';
 import Ordino from '../images/Web/Ordino-thumb.png';
 import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
+import SchittsCreek from '../images/Web/Schitts-Creek-thumb.png';
 
 class WebDesign extends Component {
     render(){
@@ -15,6 +16,18 @@ class WebDesign extends Component {
             <div className='homeContainer'>
                 <Switch>
                     <Route path='/web-design'>
+
+                    <div className='projectParentRelative'>
+                        <Link to="/web-design/SchittsCreek">
+                            <div className='projectParentAbsolute'>
+                                <div className='projectBar'>
+                                    <h1 className='projectName'>Schitt's Creek Trivia</h1>
+                                    <h2 className='projectType'>Web Design </h2>
+                                </div>
+                            </div>
+                        <img src={SchittsCreek} className='designthumb' alt="Schitt's Creek Fan Homepage"></img>
+                        </Link>
+                    </div>
 
                     <div className='projectParentRelative'>
                         <Link to="/web-design/DjLuvaLuva">
@@ -27,6 +40,7 @@ class WebDesign extends Component {
                         <img src={DJLuvaLuva} className='designthumb' alt='DJ Luva Luva Homepage'></img>
                         </Link>
                     </div>
+
                     <div className='projectParentRelative'>
                         <Link to="/web-design/Ordino">
                         <div className='projectParentAbsolute'>
