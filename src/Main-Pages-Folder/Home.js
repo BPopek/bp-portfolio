@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import SchittsCreek from '../images/Web/Schitts-Creek-thumb.png';
 import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
 import Ordino from '../images/Web/Ordino-thumb.png';
+import WPExemplar from '../images/Web/WordpressExemplarThumb.png';
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
 import ClueMMThumb from '../images/Web/clueMM-thumb.png';
 import Alta from '../images/Web/Alta-thumb.png';
@@ -49,7 +50,6 @@ class Home extends Component {
                         <img src={DJLuvaLuva} className='designthumb' alt='DJ Luva Luva Homepage'></img>
                     </Link>
                 </div>
-
                 <div className='projectParentRelative'>
                     <Link to="/web-design/Ordino">
                         <div className='projectParentAbsolute'>
@@ -59,6 +59,17 @@ class Home extends Component {
                             </div>
                         </div>
                         <img src={Ordino} className='designthumb' alt='Ordino Job Organizer Sample Page'></img>
+                    </Link>
+                </div>
+                <div className='projectParentRelative'>
+                    <Link to="/web-design/WPExemplar">
+                        <div className='projectParentAbsolute'>
+                            <div className='projectBar'>
+                                <h1 className='projectName'>Wordpress Exemplar</h1>
+                                <h2 className='projectType'>Web Design </h2>
+                            </div>
+                        </div>
+                        <img src={WPExemplar} className='designthumb' alt='Wordpress Exemplar Sample Page'></img>
                     </Link>
                 </div>
                 <div className='projectParentRelative'>

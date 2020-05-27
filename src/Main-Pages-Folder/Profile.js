@@ -1,5 +1,5 @@
 import React from 'react'
-import BPopekResume from '../images/BPopekDeveloperResume.pdf'
+import BPopekResume from '../images/BPopekDeveloperResume2020.pdf'
 // import BPopekResume2 from '.../public/BPopekSLC_12-16-19.pdf'
 
 

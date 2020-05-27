@@ -10,6 +10,8 @@ import WebDesignAlta from '../Web-Design-Folder/WebDesignAlta';
 import WebDesignCH from '../Web-Design-Folder/WebDesignCH';
 import WebDesignClueMM from '../Web-Design-Folder/WebDesignClueMM';
 import WebDesignOrdino from '../Web-Design-Folder/WebDesignOrdino';
+import WebDesignWordpressExemplar from '../Web-Design-Folder/WebDesignWordpressExemplar';
+
 import WebDesignDJLuvaLuva from '../Web-Design-Folder/WebDesignDJLuvaLuva';
 import WebDesignSchittsCreek from '../Web-Design-Folder/WebDesignSchittsCreek';
 
@@ -39,6 +41,7 @@ class App extends Component {
               <Route exact path='/web-design/SchittsCreek' component={WebDesignSchittsCreek} />
               <Route exact path='/web-design/DjLuvaLuva' component={WebDesignDJLuvaLuva} />
               <Route exact path='/web-design/Ordino' component={WebDesignOrdino} />
+              <Route exact path='/web-design/WPExemplar' component={WebDesignWordpressExemplar} />
               <Route exact path='/web-design/Alta' component={WebDesignAlta} />
               <Route exact path='/web-design/CooperHewitt' component={WebDesignCH} />
               <Route exact path='/web-design/ClueMM' component={WebDesignClueMM} />
