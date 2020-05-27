@@ -651,10 +651,12 @@ html {
 }
 .resumeLink {
     font-family: $primaryMainFont;
-    margin: 35px 35px 125px 35px;
+    margin: 0 auto 25px;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
+    display: block;
+    width: 185px;
     background-color: $primaryAccentColor;
     color: white;
     font-weight: 600;
@@ -670,8 +672,10 @@ html {
     }
     @media (min-width: 700px) {
         font-size: 20px;
+        width: 212px;
     }
     @media (min-width: 1000px) {
         font-size: 22px;
+        width: 240px;
     }
 }
