@@ -200,13 +200,15 @@
         transition: opacity 0.35s ease-in-out; }
     .carousel .control-dots {
       position: absolute;
-      bottom: 0;
+      bottom: -3px;
       margin: 30px 0 0;
       text-align: center;
-      width: 100%; }
+      width: 100%; 
+      z-index: 3;
+    }
       @media (min-width: 960px) {
         .carousel .control-dots {
-          bottom: 0; } }
+          bottom: -3px; } }
       .carousel .control-dots .dot {
         -webkit-transition: opacity 0.25s ease-in;
         -moz-transition: opacity 0.25s ease-in;
