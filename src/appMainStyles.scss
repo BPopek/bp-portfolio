@@ -120,7 +120,7 @@ html {
     color: black;
     letter-spacing: .15px;
     z-index: 5;
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0px 5px 3px;
     // padding-bottom: 2px;
     
@@ -136,70 +136,132 @@ html {
         margin: 0px 5px 1px;
     }
 }
-.navbarLinkSm {
-    font-family: $primaryHeaderFont;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration: none;
+.mobileHide {
+    display: none;
+    
+    @media (min-width: 500px) {
+        display: inline-block;    
+    }
+}
+// .navbarLinkSm {
+//     font-family: $primaryHeaderFont;
+//     font-style: normal;
+//     font-weight: 500;
+//     text-decoration: none;
+//     font-size: 6px;
+//     color: black;
+//     letter-spacing: .15px;
+//     z-index: 5;
+//     line-height: 1.4;
+//     margin: 0px 5px 3px;
+//     // padding-bottom: 2px;
+    
+//     &:hover {
+//         color: $secondAccentColor;
+//         font-weight: 600;
+//     }
+//     @media (min-width: 500px) {
+//         display: none;
+//     }
+// }
+// .navbarLinkLg {
+//     display: none;
+    
+//     &:hover {
+//         color: $secondAccentColor;
+//         font-weight: 600;
+//     }
+//     @media (min-width: 500px) {
+//         display: inline-block;
+//         font-family: $primaryHeaderFont;
+//         font-style: normal;
+//         font-weight: 500;
+//         text-decoration: none;
+//         font-size: 13px;
+//         color: black;
+//         letter-spacing: .15px;
+//         z-index: 5;
+//         line-height: 1.4;
+//         margin: 0px 5px 3px;
+//     // padding-bottom: 2px;
+//     }
+//     @media (min-width: 750px) {
+//         font-size: 15px;
+//         margin: 0px 5px 1px;
+//     }
+// }
+.navbarLinkActive {
+    position: relative;
+    color: $primaryAccentColor;
+    font-weight: 600;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 2q;
     font-size: 12px;
-    color: black;
     letter-spacing: .15px;
     z-index: 5;
     line-height: 1.4;
     margin: 0px 5px 3px;
-    // padding-bottom: 2px;
-    
-    &:hover {
-        color: $secondAccentColor;
-        font-weight: 600;
-    }
-    @media (min-width: 500px) {
-        display: none;
-    }
-    // @media (min-width: 750px) {
-    //     font-size: 16px;
-    //     margin: 0px 5px 1px;
+    // @media (min-width: 500px) {
+    //     display: none;
     // }
-}
-.navbarLinkLg {
-    display: none;
-    
-    &:hover {
-        color: $secondAccentColor;
-        font-weight: 600;
-    }
     @media (min-width: 500px) {
-        display: inline-block;
-        font-family: $primaryHeaderFont;
-        font-style: normal;
-        font-weight: 500;
-        text-decoration: none;
+        border-bottom: 3px solid whitesmoke;
+        margin-bottom: -1q;   
         font-size: 13px;
-        color: black;
-        letter-spacing: .15px;
-        z-index: 5;
-        line-height: 1.4;
-        margin: 0px 5px 3px;
-    // padding-bottom: 2px;
     }
     @media (min-width: 750px) {
+        margin-bottom: -3q;
         font-size: 15px;
-        margin: 0px 5px 1px;
-    }
-}
-.navbarLinkActive{
-    color: $primaryAccentColor;
-    font-weight: 600;
-    border-bottom: 2px solid whitesmoke;
-    margin-bottom: 4q;
-
-    @media (min-width: 500px) {
-        margin-bottom: 2q;
-    }
-    @media (min-width: 750px) {
-        margin-bottom: 0q;
     }
 } 
+.navbarLinkActive:after {
+    // content: '';
+    // position: absolute;
+    // border-top: 5px solid whitesmoke;
+    // border-left: solid 12px transparent;
+    // border-right: solid 12px transparent;
+    // bottom: -7px;
+    // margin: 0 auto;
+    // left: 31%;
+    // right: 45%;
+    display: none;
+
+    @media (min-width: 500px) {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        border-top: 5px solid whitesmoke;
+        border-left: solid 12px transparent;
+        border-right: solid 12px transparent;
+        bottom: -7px;
+        margin: 0 auto;
+        bottom: -8px;
+        left: 38%;
+        right: 45%;
+    }
+    @media (min-width: 750px) {
+        left: 43%;
+        right: 45%;
+    }
+} 
+// .navbarLinkActiveLg {
+//     display: none;
+
+//     @media (min-width: 500px) {
+//         color: $primaryAccentColor;
+//         font-weight: 600;
+//         border-bottom: 2px solid whitesmoke;
+//         margin-bottom: -1q;   
+//         font-size: 13px;
+//         letter-spacing: .15px;
+//         z-index: 5;
+//         line-height: 1.4;
+//         margin: 0px 5px 3px; 
+//     }
+//     @media (min-width: 750px) {
+//         margin-bottom: -2q;
+//     }
+// } 
 .navbarCont {
     background-color: $primaryBackgroundColor;
     display: flex;
