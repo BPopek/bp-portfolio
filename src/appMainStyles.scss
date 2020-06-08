@@ -23,15 +23,16 @@ html {
     background-color: whitesmoke;
 }
 .App {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 30px;
+    padding: 0 0 50px;
     top: 0;
     height: 100%;
 }
 .homeContainer {
     display: grid;
     position: relative;
-    margin: 65px 50px 65px 50px;
+    padding-top: 65px;
+    margin: 0 50px 65px 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 210px;
     row-gap: 25px;
@@ -48,7 +49,8 @@ html {
     }
     @media (min-width: 750px) {
         grid-template-columns: 1fr 1fr 1fr 1fr ;
-        margin: 85px 50px 85px 50px;
+        padding-top: 85px;
+        margin: 0 50px 85px 50px;
         row-gap: 30px;
         column-gap: 30px;
     }
@@ -62,7 +64,8 @@ html {
         column-gap: 40px;
     }
     @media (min-width: 1400px) {
-        margin: 100px 50px 100px 50px;
+        padding-top: 100px;
+        margin: 0 50px 100px 50px;
         row-gap: 50px;
         column-gap: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -72,8 +75,11 @@ html {
     height: 25px;
     border: 0;
     box-shadow: inset 0 25px 25px -25px $medgrey;
-    margin-top: -30px;
+    margin-top: -35px;
     margin-bottom: -55px;
+    z-index: 100 !important;
+    // background-color: red;
+    width: 100%;
 }
 .footerLink {
     font-family: $primaryHeaderFont;
@@ -122,6 +128,7 @@ html {
     z-index: 5;
     line-height: 1.5;
     margin: 0px 5px 3px;
+    cursor: pointer;
     // padding-bottom: 2px;
     
     &:hover {

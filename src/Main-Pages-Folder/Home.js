@@ -9,7 +9,7 @@ import WPExemplar from '../images/Web/WordpressExemplarThumb.png';
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
 import ClueMMThumb from '../images/Web/clueMM-thumb.png';
 import Alta from '../images/Web/Alta-thumb.png';
-import WebDesignContainer from '../Web-Design-Folder/WebDesignContainer'
+import WebDesign from '../Web-Design-Folder/WebDesign'
 
 //GD COMPONENTS
 import CPO1Thumb from '../images/GD/shirts/CPO1-thumb.jpg';
@@ -17,11 +17,12 @@ import BreastCancerTeesThumb from '../images/GD/shirts/BreastCancerTees-thumb.jp
 import SammyMoxieThumb from '../images/GD/Sammy/SammyMoxie-thumb.jpg';
 import Catalog2018Thumb from '../images/GD/print/AAFESCatalog2018-thumb.jpg';
 import BlueAngels from '../images/GD/shirts/Blue Angels/BA671111-model-thumb.jpg';
-import GraphicDesignContainer from '../Graphic-Design-Folder/GraphicDesignContainer'
+import GraphicDesign from '../Graphic-Design-Folder/GraphicDesign'
 
 //UX COMPONENTS
 import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
-import UXDesignContainer from '../UX-Design-Folder/UXDesignContainer'
+import UXDesign from '../UX-Design-Folder/UXDesignWaffler';
+import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
 
 // import Profile from './Profile'
 
@@ -40,7 +41,7 @@ function Home(props){
 
     return(
         <>
-            <div className='homeContainer' id='home'>
+            <div className='homeContainer home' id='home'>
                 <div className='projectParentRelative'>
                     <Link to="/web-design/SchittsCreek">
                         <div className='projectParentAbsolute'>
@@ -197,12 +198,12 @@ function Home(props){
                 </div>
                 {/* <Link to='/profile'>{Profile}</Link> */}
             </div>
-            <hr className='homeSpacer'/>
-            <WebDesignContainer id='web-design' />
-            <hr className='homeSpacer'/>
-            <GraphicDesignContainer id='graphic-design' />
-            <hr className='homeSpacer'/>
-            <UXDesignContainer id='ux-design' />
+            <div className='homeSpacer'/>
+            <WebDesign id='web-design' />
+            <div className='homeSpacer'/>
+            <GraphicDesign id='graphic-design' />
+            <div className='homeSpacer'/>
+            <UXDesign id='ux-design' />
         </>
     )
 }

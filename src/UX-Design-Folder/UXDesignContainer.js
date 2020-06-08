@@ -6,7 +6,7 @@ class UXDesignContainer extends Component {
 
     render(){
         return(
-            <div className=''>
+            <div>
                 <UXDesignWaffler />
             </div>
         )
