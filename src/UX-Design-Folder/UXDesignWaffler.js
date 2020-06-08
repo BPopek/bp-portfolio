@@ -18,7 +18,7 @@ class UXDesignWaffler extends Component {
 
     render(){
         return(
-            <div className='parentDiv'>
+            <div className='parentDiv ux-design'>
                 <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={true} centerMode={true} transitionTime={300}>
                     <div className='imageCarouselUX'>
                         <img src={WafflerPage1}  alt='Waffler Project'/>

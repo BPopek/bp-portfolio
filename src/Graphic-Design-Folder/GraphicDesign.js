@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Switch, Route} from 'react-router-dom';
+// import {Switch, Route} from 'react-router-dom';
 // import { Carousel } from 'react-responsive-carousel';
 
 // thumbnails for GD page
@@ -18,9 +18,9 @@ class GraphicDesign extends Component {
         
         return(
             <div>
-                <Switch>
-                    <div className='homeContainer'>
-                        <Route path='/graphic-design'>
+                {/* <Switch> */}
+                    <div className='homeContainer graphic-design'>
+                        {/* <Route path='/graphic-design'> */}
                         <div className='projectParentRelative'>
                             <Link to="/graphic-design/CPO">
                                 <div className='projectParentAbsolute'>
@@ -87,9 +87,9 @@ class GraphicDesign extends Component {
                             <img src={Misc} className='designthumb' alt='Misc Designs'></img>
                             </Link>
                         </div>
-                        </Route>
+                        {/* </Route> */}
                     </div>
-                </Switch>
+                {/* </Switch> */}
             </div>
         )
     }

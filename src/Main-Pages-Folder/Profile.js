@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import BPopekResume from '../images/BPopekDeveloperResume2020.pdf'
 // import BPopekResume2 from '.../public/BPopekSLC_12-16-19.pdf'
-
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
+// var Scroll = require('react-scroll')
+// var scroller = Scroll.scroller;
 
 function Profile () {
+    useLayoutEffect(() => {
+        scroll.scrollToTop();
+    })
 
     return(
         <>

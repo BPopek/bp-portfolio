@@ -68,6 +68,13 @@ html {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
+.homeSpacer {
+    height: 25px;
+    border: 0;
+    box-shadow: inset 0 25px 25px -25px $medgrey;
+    margin-top: -30px;
+    margin-bottom: -55px;
+}
 .footerLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
@@ -429,6 +436,8 @@ html {
     font-weight: 600;
     letter-spacing: .4px;
     display: inline-block;
+    -webkit-animation: text-shadow-pop-bottom 3s ease forwards ;
+        animation: text-shadow-pop-bottom 3s ease forwards ;
 
     &:hover {
         -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;

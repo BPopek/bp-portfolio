@@ -1,9 +1,11 @@
-import React, {Component} from 'react';
-import {NavLink,} from 'react-router-dom';
+import React from 'react';
+// import { Link, NavLink, withRouter } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll'
 
 function Navbar(props) {
     const path = props.history.location.pathname
+    // console.log(props.history)
 
     return(
         <div className='navbarCont'>
@@ -17,7 +19,21 @@ function Navbar(props) {
             <NavLink exact to='/profile' className='navbarLink' activeClassName='navbarLinkActive'>Profile</NavLink> */}
             { path === '/' ?
                 <ScrollLink
-                    activeClass='active'
+                    activeClass='navbarLinkActive'
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className='navbarLinkLg'>
+                    All Design
+                </ScrollLink>
+                :
+                <Link to={{ pathname: '/', state: { section: 'home'}}} className='navbarLinkLg' >Home</Link>
+            }
+            { path === '/' ?
+                <ScrollLink
+                    activeClass='navbarLinkActive'
                     to='web-design'
                     spy={true}
                     smooth={true}
@@ -27,11 +43,41 @@ function Navbar(props) {
                     Web Design
                 </ScrollLink>
                 :
-                <NavLink to={{ pathname: "/", state: { section: "web-design"}}} className='navbarLinkLg' >Web Design</NavLink>
+                <Link to={{ pathname: '/', state: { section: 'web-design'}}} className='navbarLinkLg' >Web Design</Link>
             }
+            { path === '/' ?
+                <ScrollLink
+                    activeClass='navbarLinkActive'
+                    to='graphic-design'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className='navbarLinkLg'>
+                    Graphic Design
+                </ScrollLink>
+                :
+                <Link to={{ pathname: '/', state: { section: 'graphic-design'}}} className='navbarLinkLg' >Graphic Design</Link>
+            }
+            { path === '/' ?
+                <ScrollLink
+                    activeClass='navbarLinkActive'
+                    to='ux-design'
+                    spy={true}
+                    smooth={true}
+                    offset={20}
+                    duration={500}
+                    className='navbarLinkLg'>
+                    UX Design
+                </ScrollLink>
+                :
+                <Link to={{ pathname: '/', state: { section: 'ux-design'}}} className='navbarLinkLg' >UX Design</Link>
+            }
+            <Link to='/profile' className='navbarLink' activeclassname='navbarLinkActive'>Profile</Link>
+
         </div>
     )
 }
 
 
-export default Navbar;
+export default withRouter(Navbar);

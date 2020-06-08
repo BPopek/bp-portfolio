@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import {Switch, Route} from 'react-router-dom';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react';
+// import { Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 //thumbs for web page
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
@@ -13,9 +13,9 @@ import SchittsCreek from '../images/Web/Schitts-Creek-thumb.png';
 class WebDesign extends Component {
     render(){
         return(
-            <div className='homeContainer'>
-                <Switch>
-                    <Route path='/web-design'>
+            <div className='homeContainer web-design'>
+                {/* <Switch>
+                    <Route path='/web-design'> */}
 
                     <div className='projectParentRelative'>
                         <Link to="/web-design/SchittsCreek">
@@ -87,8 +87,8 @@ class WebDesign extends Component {
                         <img src={Alta} className='designthumb' alt='Alta Mockup Website'></img>
                         </Link>
                     </div>
-                    </Route>
-                </Switch>
+                    {/* </Route>
+                </Switch> */}
             </div>
         )
     }

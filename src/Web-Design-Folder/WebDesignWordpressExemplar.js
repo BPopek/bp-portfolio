@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Iframe from 'react-iframe'
+// import Iframe from 'react-iframe'
 import { Carousel } from 'react-responsive-carousel';
 
 import WP1 from '../images/Web/WP/WP1.png';
