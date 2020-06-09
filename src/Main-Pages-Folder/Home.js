@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useLayoutEffect } from 'react';
+import { Link, withRouter } from 'react-router-dom';
+
 //WEB COMPONENTS
 import SchittsCreek from '../images/Web/Schitts-Creek-thumb.png';
 import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
@@ -8,25 +9,39 @@ import WPExemplar from '../images/Web/WordpressExemplarThumb.png';
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
 import ClueMMThumb from '../images/Web/clueMM-thumb.png';
 import Alta from '../images/Web/Alta-thumb.png';
+import WebDesign from '../Web-Design-Folder/WebDesign'
+
 //GD COMPONENTS
 import CPO1Thumb from '../images/GD/shirts/CPO1-thumb.jpg';
 import BreastCancerTeesThumb from '../images/GD/shirts/BreastCancerTees-thumb.jpg';
 import SammyMoxieThumb from '../images/GD/Sammy/SammyMoxie-thumb.jpg';
 import Catalog2018Thumb from '../images/GD/print/AAFESCatalog2018-thumb.jpg';
 import BlueAngels from '../images/GD/shirts/Blue Angels/BA671111-model-thumb.jpg';
+import GraphicDesign from '../Graphic-Design-Folder/GraphicDesign'
 
 //UX COMPONENTS
 import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
-import Profile from './Profile'
+import UXDesign from '../UX-Design-Folder/UXDesignWaffler';
+import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
+
+// import Profile from './Profile'
+
 //MISC COMPONENT
 import Misc from '../images/GD/MISC/IMG_4829.JPG'
+var Scroll = require('react-scroll')
+var scroller = Scroll.scroller;
 
-class Home extends Component {
+function Home(props){
 
-    render(){
-        return(
-            <div className='homeContainer'>
+    useLayoutEffect(() => {
+        scroller.scrollTo(props.location.state && props.location.state.section)
+    }, [])
+    // console.log(props.location)
+    // console.log(props.location.state)
 
+    return(
+        <>
+            <div className='homeContainer home' id='home'>
                 <div className='projectParentRelative'>
                     <Link to="/web-design/SchittsCreek">
                         <div className='projectParentAbsolute'>
@@ -38,7 +53,6 @@ class Home extends Component {
                     <img src={SchittsCreek} className='designthumb' alt="Schitt's Creek Fan Homepage"></img>
                     </Link>
                 </div>
-
                 <div className='projectParentRelative'>
                     <Link to="/web-design/DjLuvaLuva">
                         <div className='projectParentAbsolute'>
@@ -103,7 +117,7 @@ class Home extends Component {
                             </div>
                         </div>
                         <img src={Alta} className='designthumb' alt='Alta Mockup Website'></img>
-                  </Link>
+                    </Link>
                 </div>
                 <div className='projectParentRelative'>
                     <Link to='/graphic-design/BC'>
@@ -182,12 +196,17 @@ class Home extends Component {
                     <img src={Misc} className='designthumb' alt='Misc Designs'></img>
                     </Link>
                 </div>
-                
-                <Link to='/profile'>{Profile}</Link>
-
+                {/* <Link to='/profile'>{Profile}</Link> */}
             </div>
-        )
-    }
+            <div className='homeSpacer'/>
+            <WebDesign id='web-design' />
+            <div className='homeSpacer'/>
+            <GraphicDesign id='graphic-design' />
+            <div className='homeSpacerUX'/>
+            <UXDesignWafflerFullPage id='ux-design' />
+        </>
+    )
 }
 
-export default Home;
+
+export default withRouter(Home);

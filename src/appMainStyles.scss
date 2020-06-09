@@ -22,16 +22,18 @@ $darkgrey: #666;
 html {
     background-color: whitesmoke;
 }
+
 .App {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 30px;
+    padding: 0 0 30px;
     top: 0;
     height: 100%;
 }
 .homeContainer {
     display: grid;
     position: relative;
-    margin: 65px 50px 65px 50px;
+    padding-top: 65px;
+    margin: 0 50px 65px 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 210px;
     row-gap: 25px;
@@ -48,7 +50,8 @@ html {
     }
     @media (min-width: 750px) {
         grid-template-columns: 1fr 1fr 1fr 1fr ;
-        margin: 85px 50px 85px 50px;
+        padding-top: 85px;
+        margin: 0 50px 85px 50px;
         row-gap: 30px;
         column-gap: 30px;
     }
@@ -62,32 +65,56 @@ html {
         column-gap: 40px;
     }
     @media (min-width: 1400px) {
-        margin: 100px 50px 100px 50px;
+        padding-top: 100px;
+        margin: 0 50px 100px 50px;
         row-gap: 50px;
         column-gap: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 }
+.homeSpacer {
+    height: 25px;
+    border: 0;
+    box-shadow: inset 0 25px 25px -25px $medgrey;
+    margin-top: -35px;
+    margin-bottom: -55px;
+    z-index: 100 !important;
+    // background-color: red;
+    width: 100%;
+}
+.homeSpacerUX {
+    height: 25px;
+    border: 0;
+    box-shadow: inset 0 25px 25px -25px $medgrey;
+    margin-top: -35px;
+    margin-bottom: 20px;
+    z-index: 100 !important;
+    // background-color: red;
+    width: 100%;
+}
 .footerLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 11px;
     text-decoration: none;
     color: black;
-    letter-spacing: .40px;
-    line-height: 1.5;
+    letter-spacing: .15px;
+    line-height: 1.8;
 
     &:hover {
         color: $secondAccentColor;
         font-weight: 600;
     }
+    @media (min-width: 400px) {
+        font-size: 12px;
+    }
     @media (min-width: 500px) {
         font-size: 13px;
+        line-height: 1.5;
     }
     @media (min-width: 750px) {
         font-size: 15px;
-        // line-height: 2.2;
     }
 }
 .footCont {
@@ -109,88 +136,84 @@ html {
     font-style: normal;
     font-weight: 500;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 11px;
     color: black;
     letter-spacing: .15px;
     z-index: 5;
-    line-height: 1.4;
+    line-height: 1.8;
     margin: 0px 5px 3px;
-    // padding-bottom: 2px;
-    
+    cursor: pointer;
+
     &:hover {
         color: $secondAccentColor;
         font-weight: 600;
     }
+    @media (min-width: 400px) {
+        font-size: 12px;
+    }
     @media (min-width: 500px) {
         font-size: 13px;
+        line-height: 1.5;
     }
     @media (min-width: 750px) {
         font-size: 15px;
         margin: 0px 5px 1px;
     }
 }
-.navbarLinkSm {
-    font-family: $primaryHeaderFont;
-    font-style: normal;
-    font-weight: 500;
-    text-decoration: none;
-    font-size: 12px;
-    color: black;
-    letter-spacing: .15px;
-    z-index: 5;
-    line-height: 1.4;
-    margin: 0px 5px 3px;
-    // padding-bottom: 2px;
-    
-    &:hover {
-        color: $secondAccentColor;
-        font-weight: 600;
-    }
-    @media (min-width: 500px) {
-        display: none;
-    }
-    // @media (min-width: 750px) {
-    //     font-size: 16px;
-    //     margin: 0px 5px 1px;
-    // }
-}
-.navbarLinkLg {
+.mobileHide {
     display: none;
     
-    &:hover {
-        color: $secondAccentColor;
-        font-weight: 600;
-    }
     @media (min-width: 500px) {
-        display: inline-block;
-        font-family: $primaryHeaderFont;
-        font-style: normal;
-        font-weight: 500;
-        text-decoration: none;
-        font-size: 13px;
-        color: black;
-        letter-spacing: .15px;
-        z-index: 5;
-        line-height: 1.4;
-        margin: 0px 5px 3px;
-    // padding-bottom: 2px;
-    }
-    @media (min-width: 750px) {
-        font-size: 15px;
-        margin: 0px 5px 1px;
+        display: inline-block;    
     }
 }
-.navbarLinkActive{
+.navbarLinkActive {
+    position: relative;
     color: $primaryAccentColor;
     font-weight: 600;
     border-bottom: 2px solid whitesmoke;
-    margin-bottom: 4q;
-
+    margin: 0px 5px 2q;
+    font-size: 11px;
+    letter-spacing: .15px;
+    z-index: 5;
+    line-height: 1.8;
+    cursor: pointer;
+    // padding-bottom: 2px;
+    @media (min-width: 400px) {
+        font-size: 12px;
+        margin-bottom: 0q;   
+    }
     @media (min-width: 500px) {
-        margin-bottom: 2q;
+        border-bottom: 3px solid whitesmoke;
+        margin-bottom: -1q;   
+        font-size: 13px;
+        line-height: 1.5;
+
     }
     @media (min-width: 750px) {
-        margin-bottom: 0q;
+        margin-bottom: -3.5q;
+        font-size: 15px;
+    }
+} 
+.navbarLinkActive:after {
+    display: none;
+
+    @media (min-width: 500px) {
+        display: inline-block;
+        content: '';
+        position: absolute;
+        border-top: 5px solid whitesmoke;
+        border-left: solid 12px transparent;
+        border-right: solid 12px transparent;
+        bottom: -7px;
+        margin: 0 auto;
+        bottom: -8px;
+        left: 38%;
+        right: 45%;
+    }
+    @media (min-width: 750px) {
+        left: 43%;
+        right: 45%;
     }
 } 
 .navbarCont {
@@ -206,6 +229,7 @@ html {
     text-align: center;
     z-index: 6;
     box-sizing: border-box;
+    border-bottom: 2px whitesmoke solid;
 }
 .designthumb {
     width: 150px;
@@ -429,6 +453,8 @@ html {
     font-weight: 600;
     letter-spacing: .4px;
     display: inline-block;
+    -webkit-animation: text-shadow-pop-bottom 3s ease forwards ;
+        animation: text-shadow-pop-bottom 3s ease forwards ;
 
     &:hover {
         -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;
@@ -530,10 +556,10 @@ html {
     border: 1px solid $medgrey;
 
     @media (min-width: 700px) {
-        width: 430px;
+        width: 585px;
     }
     @media (min-width: 1000px) {
-        width: 476px;
+        width: 650px;
         margin: 0px 75px;
     }
 }
