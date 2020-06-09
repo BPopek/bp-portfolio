@@ -21,12 +21,12 @@ class UXDesignWaffler extends Component {
     render(){
         return(
             <>
-            <div className='ux-design'> 
+            {/* <div className='ux-design'> 
+                <span className='mobileTitle'><Link to='/ux-design/waffler' activeclassname='navbarLinkActive' >CLICK HERE TO VIEW INDIVIDUAL SLIDES OF WAFFLER PROJECT</Link></span>
                 <img src={WafflerFullPage}  alt='Waffler Project' className='mobileWaffler'/>
-             
-            </div>
+            </div> */}
 
-            <div className='parentDiv ux-design'>
+            <div className='parentDiv'>
                 <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={false} centerMode={true} transitionTime={300}>
                     <div className='imageCarouselUX'>
                         <img src={WafflerPage1}  alt='Waffler Project' className='imgSlide'/>

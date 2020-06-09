@@ -27,6 +27,7 @@ import Profile from './Profile';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import UXDesignContainer from '../UX-Design-Folder/UXDesignContainer';
+import UXDesignWaffler from '../UX-Design-Folder/UXDesignWaffler'
 // import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
 
 class App extends Component {
@@ -53,7 +54,7 @@ class App extends Component {
               <Route exact path='/graphic-design/Print' component={GraphicDesignPrint} />
               <Route exact path='/graphic-design/MISC' component={GraphicDesignMisc} />
               <Route exact path='/ux-design' component={UXDesignContainer} />
-              {/* <Route exact path='/ux-design/waffler' component={UXDesignWafflerFullPage} /> */}
+              <Route exact path='/ux-design/waffler' component={UXDesignWaffler} />
               <Route path='/profile' component={Profile} />
               {/* <Route Path='/ux-design-waffler'>
                 <UXDesignWafflerFullPage />

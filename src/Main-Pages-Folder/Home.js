@@ -202,8 +202,8 @@ function Home(props){
             <WebDesign id='web-design' />
             <div className='homeSpacer'/>
             <GraphicDesign id='graphic-design' />
-            <div className='homeSpacer'/>
-            <UXDesign id='ux-design' />
+            <div className='homeSpacerUX'/>
+            <UXDesignWafflerFullPage id='ux-design' />
         </>
     )
 }

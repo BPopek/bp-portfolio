@@ -28,7 +28,8 @@ function Navbar(props) {
                     All <span className='mobileHide'>Designs</span>
                 </ScrollLink>
                 :
-                <Link to={{ pathname: '/', state: { section: 'home'}}} className='navbarLink' >All Designs</Link>
+                <Link to={{ pathname: '/', state: { section: 'home'}}} className='navbarLink' >
+                    All <span className='mobileHide'>Designs</span></Link>
             }
             { path === '/' ?
                 <ScrollLink
@@ -42,7 +43,8 @@ function Navbar(props) {
                     Web <span className='mobileHide'>Design</span>
                 </ScrollLink>
                 :
-                <Link to={{ pathname: '/', state: { section: 'web-design'}}} className='navbarLink' >Web Design</Link>
+                <Link to={{ pathname: '/', state: { section: 'web-design'}}} className='navbarLink' >Web
+                    <span className='mobileHide'>Designs</span></Link>
             }
             { path === '/' ?
                 <ScrollLink
@@ -56,7 +58,8 @@ function Navbar(props) {
                     Graphic <span className='mobileHide'>Design</span>
                 </ScrollLink>
                 :
-                <Link to={{ pathname: '/', state: { section: 'graphic-design'}}} className='navbarLink' >Graphic Design</Link>
+                <Link to={{ pathname: '/', state: { section: 'graphic-design'}}} className='navbarLink' >Graphic
+                    <span className='mobileHide'>Design</span></Link>
             }
             { path === '/' ?
                 <ScrollLink
@@ -64,13 +67,14 @@ function Navbar(props) {
                     to='ux-design'
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-50}
                     duration={500}
                     className='navbarLink'>
                     UX <span className='mobileHide'>Design</span>
                 </ScrollLink>
                 :
-                <Link to={{ pathname: '/', state: { section: 'ux-design'}}} className='navbarLink' >UX Design</Link>
+                <Link to={{ pathname: '/', state: { section: 'ux-design'}}} className='navbarLink' >UX
+                    <span className='mobileHide'>Design</span></Link>
             }
             <NavLink to='/profile' className='navbarLink' activeclassname='navbarLinkActive' >Profile</NavLink>
         </div>
