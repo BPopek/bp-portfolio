@@ -29,7 +29,7 @@ class UXDesignWaffler extends Component {
             <div className='parentDiv'>
                 <Carousel showThumbs={false} infiniteLoop={true} showStatus={false} swipeable={true} dynamicHeight={true} useKeyboardArrows={true} autoPlay={false} centerMode={true} transitionTime={300}>
                     <div className='imageCarouselUX'>
-                        <img src={WafflerPage1}  alt='Waffler Project' className='imgSlide'/>
+                        <img src={WafflerPage1}  alt='Waffler Project'/>
                     </div>
                     <div className='imageCarouselUX'>
                         <img src={WafflerPage2}  alt='Waffler Project'/>

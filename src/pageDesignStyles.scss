@@ -117,7 +117,7 @@
     display: block;
     width: 90%;
     margin: 0 auto 5px;
-    padding: 5px;
+    padding: 5px 10px;
     text-align: center;
     font-family: $primaryHeaderFont;
     font-style: normal;
@@ -184,12 +184,12 @@
     -webkit-transform: translate3d(0%, 0px, 0px) !important;
 }
 .parentDiv {
-    display: none;
+    // display: none;
     text-align: center;
     margin: 90px 0 0;
-    @media (min-width: 500px) {
-        display: block;
-    }
+    // @media (min-width: 500px) {
+    //     display: block;
+    // }
 }
 .webGitHubLinks {
     margin-top: 60px;

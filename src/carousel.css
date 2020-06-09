@@ -41,6 +41,8 @@ COLOURS
 }
 .carousel .control-prev.control-arrow {
   left: 0; 
+  margin: auto 0;
+  height: 300px;
 }
 .carousel .control-prev.control-arrow:before {
   border-right: 8px solid black; 
@@ -49,7 +51,6 @@ COLOURS
   right: 0; 
   margin: auto 0;
   height: 300px;
-
 }
 .carousel .control-next.control-arrow:before {
   border-left: 8px solid black; 
@@ -68,7 +69,8 @@ COLOURS
 .carousel img {
   width: 100%;
   display: inline-block;
-  pointer-events: none; 
+  /* pointer-events: none;  */
+  margin: auto 15px auto;
 }
 .carousel .carousel {
   position: relative; 
@@ -134,9 +136,9 @@ COLOURS
   color: none;
   font-size: 26px;
   bottom: 0;
-  margin: 0 10px;
-  padding: 20px; 
-
+  margin: 0 15px;
+  padding: 20px 5px; 
+  height: 100%;
 }
 @media (min-width: 500px) {
   .carousel.carousel-slider .control-arrow {
