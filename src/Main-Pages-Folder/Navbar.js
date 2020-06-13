@@ -22,7 +22,7 @@ function Navbar(props) {
                     to='home'
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-30}
                     duration={500}
                     className='navbarLink'>
                     All <span className='mobileHide'>Designs</span>
@@ -37,7 +37,7 @@ function Navbar(props) {
                     to='web-design'
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={20}
                     duration={500}
                     className='navbarLink'>
                     Web <span className='mobileHide'>Design</span>
@@ -52,7 +52,7 @@ function Navbar(props) {
                     to='graphic-design'
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={20}
                     duration={500}
                     className='navbarLink'>
                     Graphic <span className='mobileHide'>Design</span>
@@ -67,7 +67,7 @@ function Navbar(props) {
                     to='ux-design'
                     spy={true}
                     smooth={true}
-                    offset={-50}
+                    offset={-70}
                     duration={500}
                     className='navbarLink'>
                     UX <span className='mobileHide'>Design</span>
