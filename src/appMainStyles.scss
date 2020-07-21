@@ -13,7 +13,8 @@ $code: rgb(212, 91, 87);
 
 $primaryBackgroundColor: #d1d1d1;
 $medgrey: #d1d1d1;
-$darkgrey: #666;
+$darkgrey: #b2b2b2;
+$darkergrey: #404040;
 
 * {
     margin: 0;
@@ -22,7 +23,6 @@ $darkgrey: #666;
 html {
     background-color: whitesmoke;
 }
-
 .App {
     margin: 0 0 30px;
     padding: 0 0 30px;
@@ -118,7 +118,7 @@ html {
     }
 }
 .footCont {
-    background-color: $primaryBackgroundColor;
+    background-color: $darkgrey;
     display: flex;
     position: fixed;
     bottom: 0px;
@@ -145,7 +145,7 @@ html {
     cursor: pointer;
 
     &:hover {
-        color: $secondAccentColor;
+        color: $primaryAccentColor;
         font-weight: 600;
     }
     @media (min-width: 400px) {
@@ -169,9 +169,9 @@ html {
 }
 .navbarLinkActive {
     position: relative;
-    color: $primaryAccentColor;
+    color: black;
     font-weight: 600;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 2px solid $primaryAccentColor;
     margin: 0px 5px 2q;
     font-size: 11px;
     letter-spacing: .15px;
@@ -184,40 +184,39 @@ html {
         margin-bottom: 0q;   
     }
     @media (min-width: 500px) {
-        border-bottom: 3px solid whitesmoke;
+        border-bottom: 3px solid $primaryAccentColor;
         margin-bottom: -1q;   
         font-size: 13px;
         line-height: 1.5;
-
     }
     @media (min-width: 750px) {
         margin-bottom: -3.5q;
         font-size: 15px;
     }
 } 
-.navbarLinkActive:after {
-    display: none;
+// .navbarLinkActive:after {
+//     display: none;
 
-    @media (min-width: 500px) {
-        display: inline-block;
-        content: '';
-        position: absolute;
-        border-top: 5px solid whitesmoke;
-        border-left: solid 12px transparent;
-        border-right: solid 12px transparent;
-        bottom: -7px;
-        margin: 0 auto;
-        bottom: -8px;
-        left: 38%;
-        right: 45%;
-    }
-    @media (min-width: 750px) {
-        left: 43%;
-        right: 45%;
-    }
-} 
+//     @media (min-width: 500px) {
+//         display: inline-block;
+//         content: '';
+//         position: absolute;
+//         border-top: 5px solid whitesmoke;
+//         border-left: solid 12px transparent;
+//         border-right: solid 12px transparent;
+//         bottom: -7px;
+//         margin: 0 auto;
+//         bottom: -8px;
+//         left: 38%;
+//         right: 45%;
+//     }
+//     @media (min-width: 750px) {
+//         left: 43%;
+//         right: 45%;
+//     }
+// } 
 .navbarCont {
-    background-color: $primaryBackgroundColor;
+    background-color: $darkgrey;
     display: flex;
     position: fixed;
     top: 0px;
@@ -229,7 +228,7 @@ html {
     text-align: center;
     z-index: 6;
     box-sizing: border-box;
-    border-bottom: 2px whitesmoke solid;
+    // border-bottom: 2px $darkergrey solid;
 }
 .designthumb {
     width: 150px;
@@ -378,7 +377,7 @@ html {
     display: block;
     font-size: 12px;
     font-weight: 600;
-    color: $darkgrey;
+    color: $darkergrey;
     text-decoration: none;
     width: 100%;
     letter-spacing: .4px;
@@ -419,35 +418,108 @@ html {
 .profile {
     text-align: center;
     margin: 80px 0px 0px;    
+    display: relative;
 }
 .profile2 {
     text-align: center;
-    margin-right: 35px;  
-    margin-bottom: 100px; 
+    margin: 40px auto 10px;
+    display: relative;
+    @media (min-width: 700px) {
+        font-size: 20px;
+        margin: 50px auto 10px;
+    }
+    @media (min-width: 850px) {
+        font-size: 22px;
+        margin: 60px auto 10px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 26px;
+        margin: 70px auto 10px;
+    }
 }
+.categorySpacer {
+    font-family: $primaryMainFont;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin: 25px 40px ;
+    width: auto;
+    color: black;
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: 500px) {
+        font-size: 18px;
+        margin: 25px 35px ; 
+    }
+    @media (min-width: 700px) {
+        font-size: 22px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 26px;
+        margin: 25px 75px 25px; 
+    }
+}
+.categorySpacer::before {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1.5px solid #999;
+    margin: auto 5px auto 0;
+}
+.categorySpacer::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1.5px solid #999;
+    margin: auto 0 auto 5px;
+}
+
 .welcome {
     font-family: $primaryMainFont;
     margin: 25px 35px 0px;
-    font-size: 15px;
+    font-size: 22px;
     line-height: 1.4;
     letter-spacing: .5px;
     font-weight: 600;
 
-    @media (min-width: 400px) {
-      font-size: 16px;
+    @media (min-width: 500px) {
+      font-size: 35px;
     }
     @media (min-width: 700px) {
-        font-size: 18px;
-        margin: 40px 35px 0px;
+        font-size: 40px;
+        margin: 70px 35px 0px;
     }
     @media (min-width: 1000px) {
-        font-size: 24px;
-        margin: 50px 35px 0px;
+        font-size: 45px;
+        margin: 100px 35px 0px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 49px;
+    }
+}
+.welcome2 {
+    font-family: $primaryMainFont;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: .5px;
+    font-weight: 600;
+
+    @media (min-width: 500px) {
+      font-size: 25px;
+    }
+    @media (min-width: 700px) {
+        font-size: 29px;
+    }
+    @media (min-width: 1000px) {
+        font-size: 33px;
+    }
+    @media (min-width: 1200px) {
+        font-size: 36px;
     }
 }
 .careerCode {
     font-family: 'Courier New', Courier, monospace;
-    margin: 20px 55px;
+    margin: 40px 55px;
     font-size: 15px;
     color: $secondAccentColor;
     font-weight: 600;
@@ -456,82 +528,84 @@ html {
     -webkit-animation: text-shadow-pop-bottom 3s ease forwards ;
         animation: text-shadow-pop-bottom 3s ease forwards ;
 
-    &:hover {
-        -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;
-        animation: text-shadow-pop-bottom 3s ease forwards infinite;
-    }
-
-    @media (min-width: 400px) {
-        font-size: 16px;
+    // &:hover {
+    //     -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;
+    //     animation: text-shadow-pop-bottom 3s ease forwards infinite;
+    // }
+    @media (min-width: 500px) {
+        font-size: 18px;
     }
     @media (min-width: 700px) {
-        font-size: 18px;
-        margin: 30px 25px ;
+        font-size: 20px;
+        margin: 50px 25px ;
+    }
+    @media (min-width: 850px) {
+        font-size: 22px;
+        margin: 60px 25px ;
     }
     @media (min-width: 1000px) {
-        font-size: 24px;
-        margin: 40px 35px;
+        font-size: 26px;
+        margin: 70px 35px;
     }
 }
 @-webkit-keyframes text-shadow-pop-bottom {
     0% {
       text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
       transform: scale(1, 1);
-
     }
     50% {
       text-shadow: 0 1px 3px 2px $medgrey, 0 2px 2px $medgrey, 0 3px 2px $medgrey, 0 4px 2px $medgrey, 0 5px 5px $medgrey, 0 6px 5px $medgrey, 0 7px 5px $medgrey;
       transform: scale(1.26, 1.26);
       color: $primaryAccentColor;
- 
     }
     100% {
         text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
-        transform: scale(1, 1);
-  
+        transform: scale(1.1, 1.1);
       }
   }
   @keyframes text-shadow-pop-bottom {
     0% {
       text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
       transform: scale(1, 1);
-
     }
     50% {
       text-shadow: 0 1px 2px $medgrey, 0 2px 2px $medgrey, 0 3px 2px $medgrey, 0 4px 2px $medgrey, 0 5px 5px $medgrey, 0 6px 5px $medgrey, 0 7px 5px $medgrey;
       transform: scale(1.26, 1.26);
       color: $primaryAccentColor;
-
     //   -webkit-transform: translateY(-8px);
     //           transform: translateY(-8px);
     }
     100% {
         text-shadow: 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey, 0 0 $medgrey;
-        transform: scale(1, 1);
+        transform: scale(1.1, 1.1);
       //   -webkit-transform: translateY(0);
       //           transform: translateY(0);
       }
   }
 .profileHistory {
     font-family: $primaryMainFont;
-    margin: 0px 40px 45px;
+    margin: 0px 40px 15px;
     font-size: 15px;
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.5;
+    font-weight: 500;
 
     @media (min-width: 400px) {
-        margin: 0px 35px 45px; 
+        margin: 0px 35px 15px; 
     }
     @media (min-width: 700px) {
-        font-size: 18px;
-        margin: 0px 35px 45px;    
-        line-height: 1.5;
+        font-size: 17px;
+        line-height: 1.7;
     }
     @media (min-width: 1000px) {
         font-size: 18px;
-        margin: 0px 75px 45px;
-        line-height: 1.6;
+        margin: 0px 75px 25px;
+        line-height: 1.9;
     }
+}
+.highlight {
+    color: $primaryAccentColor;
+    display: inline;
 }
 .profileHeader {
     font-family: $primaryMainFont;
@@ -677,7 +751,7 @@ html {
 }
 .resumeLink {
     font-family: $primaryMainFont;
-    margin: 25px auto 50px;
+    margin: 50px auto 0;
     font-size: 15px;
     text-align: center;
     text-decoration: none;
@@ -693,15 +767,14 @@ html {
         background-color: $secondAccentColor;
     }
 
-    @media (min-width: 400px) {
+    @media (min-width: 500px) {
         font-size: 18px;
+        width: 250px;
     }
     @media (min-width: 700px) {
-        font-size: 20px;
-        width: 212px;
+        font-size: 22px;
     }
     @media (min-width: 1000px) {
-        font-size: 22px;
-        width: 240px;
+        font-size: 24px;
     }
 }
