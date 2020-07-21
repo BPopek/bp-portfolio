@@ -17,7 +17,7 @@ function Profile () {
                     Hello! I am Betsy 
                     <h4 className='welcome2'>a Full-Stack Developer</h4>
                 </div>
-                <h4 className='careerCode'>career = graphicDesigner => softwareDeveloper</h4>
+                <h4 className='careerCode'>career = graphicDesigner =&gt; softwareDeveloper</h4>
                 <h4 className='categorySpacer'>ABOUT</h4>
 
                 <div className='profileHistory'>My name is <p className='highlight'>Betsy Popek</p>. I am a Salt Lake City, Utah based <p className='highlight'>full-stack developer</p> who values building clean designs with an eye for thoughtful user experience.
