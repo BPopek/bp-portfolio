@@ -8,13 +8,12 @@ $primaryMainFont: Raleway;
 $primaryAccentColor: #2382a5;
 $secondAccentColor: #617;
 $code: #B01055;
-$code: rgb(212, 91, 87);
-
 
 $primaryBackgroundColor: #d1d1d1;
+$lightgrey: #eee;
 $medgrey: #d1d1d1;
 $darkgrey: #b2b2b2;
-$darkergrey: #404040;
+$darkergrey: #262626;
 
 * {
     margin: 0;
@@ -95,15 +94,15 @@ html {
 .footerLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 11px;
     text-decoration: none;
-    color: black;
+    color: $lightgrey;
     letter-spacing: .15px;
     line-height: 1.8;
 
     &:hover {
-        color: $secondAccentColor;
+        color: $primaryAccentColor;
         font-weight: 600;
     }
     @media (min-width: 400px) {
@@ -118,7 +117,7 @@ html {
     }
 }
 .footCont {
-    background-color: $darkgrey;
+    background-color: $darkergrey;
     display: flex;
     position: fixed;
     bottom: 0px;
@@ -134,10 +133,10 @@ html {
 .navbarLink {
     font-family: $primaryHeaderFont;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
-    font-size: 11px;
-    color: black;
+    font-size: 11.5px;
+    color: $lightgrey;
     letter-spacing: .15px;
     z-index: 5;
     line-height: 1.8;
@@ -169,11 +168,12 @@ html {
 }
 .navbarLinkActive {
     position: relative;
-    color: black;
+    color: whitesmoke;
     font-weight: 600;
-    border-bottom: 2px solid $primaryAccentColor;
-    margin: 0px 5px 2q;
-    font-size: 11px;
+    border-bottom: 3px solid $primaryAccentColor;
+    padding: 0 2px 0;
+    margin: 0px 5px 1q;
+    font-size: 11.5px;
     letter-spacing: .15px;
     z-index: 5;
     line-height: 1.8;
@@ -181,16 +181,16 @@ html {
     // padding-bottom: 2px;
     @media (min-width: 400px) {
         font-size: 12px;
-        margin-bottom: 0q;   
+        border-bottom: 4px solid $primaryAccentColor;
+        margin-bottom: -2.5q;   
     }
     @media (min-width: 500px) {
-        border-bottom: 3px solid $primaryAccentColor;
-        margin-bottom: -1q;   
+        border-bottom: 5px solid $primaryAccentColor;
+        margin-bottom: -5.5q;   
         font-size: 13px;
         line-height: 1.5;
     }
     @media (min-width: 750px) {
-        margin-bottom: -3.5q;
         font-size: 15px;
     }
 } 
@@ -216,7 +216,7 @@ html {
 //     }
 // } 
 .navbarCont {
-    background-color: $darkgrey;
+    background-color: $darkergrey;
     display: flex;
     position: fixed;
     top: 0px;
