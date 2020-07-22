@@ -274,6 +274,7 @@ html {
     height: 200px;
     z-index: 5;
     text-align: center;
+    margin: auto;
 
     @media (min-width: 550px) {
         width: 150px;
@@ -298,13 +299,11 @@ html {
 .projectParentAbsolute {
     position: absolute;
     width: 150px;
-    // height: 200px;
     z-index: 5;
     top: 75px;
 
     @media (min-width: 550px) {
         width: 150px;
-        // height: 200px;
     }
     @media (min-width: 750px) {
         width: 150px;
@@ -417,8 +416,10 @@ html {
 }
 .profile {
     text-align: center;
-    margin: 80px 0px 0px;    
     display: relative;
+}
+.profile-container {
+    margin: 0px auto 70px;
 }
 .profile2 {
     text-align: center;
@@ -441,7 +442,7 @@ html {
     font-family: $primaryMainFont;
     font-size: 16px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 7px;
     margin: 25px 40px ;
     width: auto;
     color: black;
@@ -464,45 +465,95 @@ html {
     content: "";
     flex: 1 1;
     border-bottom: 1.5px solid #999;
-    margin: auto 5px auto 0;
+    margin: auto 10px auto 0;
 }
 .categorySpacer::after {
     content: "";
     flex: 1 1;
     border-bottom: 1.5px solid #999;
-    margin: auto 0 auto 5px;
+    margin: auto 0 auto 10px;
 }
-
 .welcome {
+    padding: 25px 35px 15px;
+    background: #000 url('./images/SLC.png');
+    height: 140px;
+    background-attachment: fixed;
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+
+    @media (min-width: 500px) {
+        height: 175px;
+        padding: 35px 35px 15px;
+    }
+    @media (min-width: 700px) {
+        height: 225px;
+        padding: 60px 35px 15px;
+    }
+    @media (min-width: 1000px) {
+        height: 250px;
+        padding: 75px 35px 15px;
+    }
+    @media (min-width: 1200px) {
+    }
+}
+.welcome:before {
+    content: "";
+    position: absolute;
+    height: 140px;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 254, 254, 0.404);
+
+    @media (min-width: 500px) {
+        height: 175px;
+    }
+    @media (min-width: 700px) {
+        height: 225px;
+    }
+    @media (min-width: 1000px) {
+        height: 250px;
+    }
+  }
+  .welcomeName {
+    position: relative;
     font-family: $primaryMainFont;
-    margin: 25px 35px 0px;
+    margin: 35px auto 5px;
     font-size: 22px;
     line-height: 1.4;
     letter-spacing: .5px;
     font-weight: 600;
+    z-index: 2;
+    -webkit-animation: fade-in-top 2s 1s ease both;
+        animation: fade-in-top 2s 1s ease both;
 
     @media (min-width: 500px) {
-      font-size: 35px;
+        font-size: 35px;
     }
     @media (min-width: 700px) {
         font-size: 40px;
-        margin: 70px 35px 0px;
     }
     @media (min-width: 1000px) {
         font-size: 45px;
-        margin: 100px 35px 0px;
     }
     @media (min-width: 1200px) {
         font-size: 49px;
     }
 }
-.welcome2 {
+.welcomeDescription {
+    position: relative;
     font-family: $primaryMainFont;
-    color: #999;
+    color: $darkergrey;
     font-size: 16px;
     line-height: 1.4;
     letter-spacing: .5px;
     font-weight: 600;
+    z-index: 2;
+    -webkit-animation: fade-in-top 2s 2s ease both;
+    animation: fade-in-top 2s 2s ease both;
 
     @media (min-width: 500px) {
       font-size: 25px;
@@ -517,35 +568,60 @@ html {
         font-size: 36px;
     }
 }
+@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px), scale(0.75);
+              transform: translateY(-50px), scale(0.75);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0), scale(1);
+              transform: translateY(0), scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px), scale(0.75);
+              transform: translateY(-50px), scale(0.75);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0), scale(1);
+              transform: translateY(0), scale(1);
+      opacity: 1;
+    }
+  }
 .careerCode {
     font-family: 'Courier New', Courier, monospace;
-    margin: 40px 55px;
+    margin: 40px 55px 15px;
     font-size: 15px;
     color: $secondAccentColor;
     font-weight: 600;
     letter-spacing: .4px;
     display: inline-block;
-    -webkit-animation: text-shadow-pop-bottom 3s ease forwards ;
-        animation: text-shadow-pop-bottom 3s ease forwards ;
+    -webkit-animation: text-shadow-pop-bottom 3s 3s ease forwards ;
+        animation: text-shadow-pop-bottom 3s 3s ease forwards ;
 
-    // &:hover {
-    //     -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;
-    //     animation: text-shadow-pop-bottom 3s ease forwards infinite;
-    // }
+    &:hover {
+        // -webkit-animation: text-shadow-pop-bottom 3s ease forwards infinite;
+        // animation: text-shadow-pop-bottom 3s ease forwards infinite;
+        color: $primaryAccentColor;
+    }
     @media (min-width: 500px) {
         font-size: 18px;
     }
     @media (min-width: 700px) {
         font-size: 20px;
-        margin: 50px 25px ;
+        margin: 50px 25px 25px;
     }
     @media (min-width: 850px) {
         font-size: 22px;
-        margin: 60px 25px ;
+        margin: 60px 25px 35px;
     }
     @media (min-width: 1000px) {
         font-size: 26px;
-        margin: 70px 35px;
+        margin: 70px 35px 45px;
     }
 }
 @-webkit-keyframes text-shadow-pop-bottom {
@@ -606,11 +682,12 @@ html {
 .highlight {
     color: $primaryAccentColor;
     display: inline;
+    font-weight: 600;
 }
 .profileHeader {
     font-family: $primaryMainFont;
     color: $primaryAccentColor;
-    margin: 15px 35px 0px;
+    margin: 15px 35px 5px;
     font-size: 17px;
     text-align: left;
     line-height: 1.4;
@@ -621,13 +698,13 @@ html {
     }
     @media (min-width: 1000px) {
         font-size: 21px;
-        margin: 15px 75px 0px;
+        margin: 25px 75px 7px;
     }
 }
 .profileLineSD {
     width: 378px;
     margin: 0px 35px;
-    border: 1px solid $medgrey;
+    border-top: 1px solid $medgrey;
 
     @media (min-width: 700px) {
         width: 585px;
@@ -640,7 +717,8 @@ html {
 .profileLineD {
     width: 385px;
     margin: 0px 35px;
-    border: 1px solid $medgrey;
+    border-top: 1px solid $medgrey;
+
     @media (min-width: 700px) {
         width: 445px;
     }
@@ -652,7 +730,7 @@ html {
 .profileLineC {
     width: 224px;
     margin: 0px 35px;
-    border: 1px solid $medgrey;
+    border-top: 1px solid $medgrey;
     @media (min-width: 700px) {
         width: 255px;
     }

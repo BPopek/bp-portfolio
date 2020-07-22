@@ -16,13 +16,28 @@ function Navbar(props) {
             <NavLink exact to='/graphic-design' className='navbarLinkSm' activeClassName='navbarLinkActive'>Graphic</NavLink>
             <NavLink exact to='/ux-design' className='navbarLinkSm' activeClassName='navbarLinkActive'>UX</NavLink>
             <NavLink exact to='/profile' className='navbarLink' activeClassName='navbarLinkActive'>Profile</NavLink> */}
+            {/* <NavLink to='/profile' className='navbarLink' activeclassname='navbarLinkActive' >Profile</NavLink> */}
+            { path === '/' ?
+                <ScrollLink
+                    activeClass='navbarLinkActive'
+                    to='profile-container'
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className='navbarLink'>
+                    Profile 
+                </ScrollLink>
+                :
+                <Link to={{ pathname: '/', state: { section: 'ux-design'}}} className='navbarLink'>Profile</Link>
+            }
             { path === '/' ?
                 <ScrollLink
                     activeClass='navbarLinkActive'
                     to='home'
                     spy={true}
                     smooth={true}
-                    offset={-30}
+                    offset={-10}
                     duration={500}
                     className='navbarLink'>
                     All <span className='mobileHide'>Designs</span>
@@ -37,7 +52,7 @@ function Navbar(props) {
                     to='web-design'
                     spy={true}
                     smooth={true}
-                    offset={20}
+                    offset={-10}
                     duration={500}
                     className='navbarLink'>
                     Web <span className='mobileHide'>Design</span>
@@ -52,7 +67,7 @@ function Navbar(props) {
                     to='graphic-design'
                     spy={true}
                     smooth={true}
-                    offset={20}
+                    offset={-10}
                     duration={500}
                     className='navbarLink'>
                     Graphic <span className='mobileHide'>Design</span>
@@ -67,7 +82,7 @@ function Navbar(props) {
                     to='ux-design'
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-85}
                     duration={500}
                     className='navbarLink'>
                     UX <span className='mobileHide'>Design</span>
@@ -76,7 +91,7 @@ function Navbar(props) {
                 <Link to={{ pathname: '/', state: { section: 'ux-design'}}} className='navbarLink' >UX
                     <span className='mobileHide'>Design</span></Link>
             }
-            <NavLink to='/profile' className='navbarLink' activeclassname='navbarLinkActive' >Profile</NavLink>
+
         </div>
     )
 }

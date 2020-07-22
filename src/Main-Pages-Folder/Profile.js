@@ -11,22 +11,22 @@ function Profile () {
     })
 
     return(
-        <>
+        <div className='profile-container'>
             <div className='profile'>
                 <div className='welcome'>
-                    Hello! I am Betsy 
-                    <h4 className='welcome2'>a Full-Stack Developer</h4>
+                    <h4 className='welcomeName'>Hello! I am Betsy </h4>                   
+                    <h4 className='welcomeDescription'>a Full-Stack Developer</h4>
                 </div>
                 <h4 className='careerCode'>career = graphicDesigner =&gt; softwareDeveloper</h4>
                 <h4 className='categorySpacer'>ABOUT</h4>
 
-                <div className='profileHistory'>My name is <p className='highlight'>Betsy Popek</p>. I am a Salt Lake City, Utah based <p className='highlight'>full-stack developer</p> who values building clean designs with an eye for thoughtful user experience.
+                <div className='profileHistory'>My name is <p className='highlight'>Betsy Popek</p>. I am a Salt Lake City, Utah based <p className='highlight'>full-stack software developer</p> who values building clean designs with an eye for thoughtful user experience.
                 </div>
                 <div className='profileHistory'>
-                    My interest in <p className='highlight'>development and coding</p> grew over the years while working as a graphic designer. Since beginning my design journey over a decade ago, I've dabbled in courses for CSS, HTML, Ruby and Python as well as Adobe Dreamweaver. After completing a UX online course through Springboard, I realized I loved the user experience but wanted to be <p className='highlight'>more involved in coding and building interfaces</p> instead of handing that off to a developer. 
+                    My interest in <p className='highlight'>development and coding</p> grew over the years while working as a graphic designer. Since beginning my design journey over a decade ago, I've dabbled in courses for CSS, HTML, Ruby and Python as well as Adobe Dreamweaver. After completing a UX online course through Springboard, I realized that while I love the user experience, I want to be <p className='highlight'>more involved in coding and building interfaces</p> instead of handing that off to a developer. 
                 </div>
                 <div className='profileHistory'>
-                    Last year I finally decided to take the plunge and attended the V School<p className='highlight'> Full-Stack (MERN) JavaScript program </p> in downtown SLC. I was drawn to their package of a wealth of consistently updated material with a fabulous team and a high level of alumni support. 
+                    Last year I finally decided to take the plunge and attended the V School<p className='highlight'> Full-Stack (MERN) JavaScript </p>program in downtown SLC. I was drawn to their package of a wealth of consistently updated material with a fabulous team and a high level of alumni support. 
                 </div>
             </div>
             <div className='profile2'>
@@ -49,7 +49,7 @@ function Profile () {
                 <p className='profileSmHeadPhone'>Phone: <span className='profileDetail'>801-448-7273</span></p>
                 <a download href={BPopekResume}  className='resumeLink'>DOWNLOAD RESUME</a>
             </div>
-        </>
+        </div>
     )
 }
 
