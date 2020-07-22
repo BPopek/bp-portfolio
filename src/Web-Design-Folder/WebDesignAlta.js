@@ -1,9 +1,17 @@
-import React, {Component} from 'react'
-import Iframe from 'react-iframe'
+import React, { Component, useLayoutEffect } from 'react';
+import Iframe from 'react-iframe';
+var Scroll = require('react-scroll');
+var scroll = Scroll.animateScroll;
 
 class WebDesignAlta extends Component {
 
     render(){
+        // scroll.scrollToTop({
+        //     top: 0,
+        //     left: 0,
+        //     behavior: 'smooth'
+        //     });
+
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>

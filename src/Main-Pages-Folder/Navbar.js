@@ -40,11 +40,11 @@ function Navbar(props) {
                     offset={-10}
                     duration={500}
                     className='navbarLink'>
-                    All <span className='mobileHide'>Designs</span>
+                    All <span className='mobileHide'>&nbsp;Designs</span>
                 </ScrollLink>
                 :
                 <Link to={{ pathname: '/', state: { section: 'home'}}} className='navbarLink' >
-                    All <span className='mobileHide'>Designs</span></Link>
+                    All <span className='mobileHide'>&nbsp;Designs</span></Link>
             }
             { path === '/' ?
                 <ScrollLink
@@ -55,11 +55,11 @@ function Navbar(props) {
                     offset={-10}
                     duration={500}
                     className='navbarLink'>
-                    Web <span className='mobileHide'>Design</span>
+                    Web <span className='mobileHide'>&nbsp;Design</span>
                 </ScrollLink>
                 :
-                <Link to={{ pathname: '/', state: { section: 'web-design'}}} className='navbarLink' >Web
-                    <span className='mobileHide'>Designs</span></Link>
+                <Link to={{ pathname: '/', state: { section: 'web-design'}}} className='navbarLink'>Web
+                    <span className='mobileHide'>&nbsp;Designs</span></Link>
             }
             { path === '/' ?
                 <ScrollLink
@@ -70,11 +70,11 @@ function Navbar(props) {
                     offset={-10}
                     duration={500}
                     className='navbarLink'>
-                    Graphic <span className='mobileHide'>Design</span>
+                    Graphic <span className='mobileHide'>&nbsp;Design</span>
                 </ScrollLink>
                 :
-                <Link to={{ pathname: '/', state: { section: 'graphic-design'}}} className='navbarLink' >Graphic
-                    <span className='mobileHide'>Design</span></Link>
+                <Link to={{ pathname: '/', state: { section: 'graphic-design'}}} className='navbarLink'>Graphic
+                    <span className='mobileHide'>&nbsp;Design</span></Link>
             }
             { path === '/' ?
                 <ScrollLink
@@ -85,11 +85,11 @@ function Navbar(props) {
                     offset={-85}
                     duration={500}
                     className='navbarLink'>
-                    UX <span className='mobileHide'>Design</span>
+                    UX <span className='mobileHide'>&nbsp;Design</span>
                 </ScrollLink>
                 :
                 <Link to={{ pathname: '/', state: { section: 'ux-design'}}} className='navbarLink' >UX
-                    <span className='mobileHide'>Design</span></Link>
+                    <span className='mobileHide'>&nbsp;Design</span></Link>
             }
 
         </div>

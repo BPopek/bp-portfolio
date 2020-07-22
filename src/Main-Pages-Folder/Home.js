@@ -3,13 +3,13 @@ import { Link, withRouter } from 'react-router-dom';
 import Profile from '../Main-Pages-Folder/Profile';
 
 //WEB COMPONENTS
-import SchittsCreek from '../images/Web/Schitts-Creek-thumb.png';
-import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.png';
-import Ordino from '../images/Web/Ordino-thumb.png';
-import WPExemplar from '../images/Web/WordpressExemplarThumb.png';
+import SchittsCreek from '../images/Web/Schitts-Creek-thumb.jpg';
+import DJLuvaLuva from '../images/Web/DJLuvaLuva-Thumb.jpg';
+import Ordino from '../images/Web/Ordino-thumb.jpg';
+import WPExemplar from '../images/Web/WordpressExemplarThumb.jpg';
 import CHThumb from '../images/Web/CH-Sign-Thumb.jpg';
-import ClueMMThumb from '../images/Web/clueMM-thumb.png';
-import Alta from '../images/Web/Alta-thumb.png';
+import ClueMMThumb from '../images/Web/clueMM-thumb.jpg';
+import Alta from '../images/Web/Alta-thumb.jpg';
 import WebDesign from '../Web-Design-Folder/WebDesign';
 
 //GD COMPONENTS
@@ -21,7 +21,7 @@ import BlueAngels from '../images/GD/shirts/Blue Angels/BA671111-model-thumb.jpg
 import GraphicDesign from '../Graphic-Design-Folder/GraphicDesign';
 
 //UX COMPONENTS
-import Waffler from '../images/UX/WebsiteUXWafflerThumb.png';
+import Waffler from '../images/UX/WebsiteUXWafflerThumb.jpg';
 import UXDesign from '../UX-Design-Folder/UXDesignWaffler';
 import UXDesignWafflerFullPage from '../UX-Design-Folder/UXDesignWafflerFullPage';
 
