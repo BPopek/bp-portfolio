@@ -475,12 +475,12 @@ html {
 }
 .welcome {
     padding: 25px 35px 15px;
-    background: #000 url('./images/SLC.jpg');
+    background: whitesmoke url('./images/SLC.jpg');
     height: 140px;
     background-attachment: fixed;
     background-position: center 0%;
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
     box-sizing: border-box;
 
     @media (min-width: 500px) {
@@ -490,6 +490,8 @@ html {
     @media (min-width: 700px) {
         height: 225px;
         padding: 60px 35px 15px;
+        background-size: cover;
+
     }
     @media (min-width: 1000px) {
         height: 250px;
