@@ -5,6 +5,9 @@ import Iframe from 'react-iframe'
 class WebDesignCH extends Component {
 
     render(){
+        
+        window.scrollTo(0,0);
+
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>

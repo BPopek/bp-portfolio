@@ -4,6 +4,9 @@ import Iframe from 'react-iframe'
 class WebDesignDJLuvaLuva extends Component {
 
     render(){
+
+        window.scrollTo(0,0);
+
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>

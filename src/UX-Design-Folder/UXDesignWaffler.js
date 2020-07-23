@@ -19,6 +19,9 @@ import WafflerFullPage from '../images/UX/WW-Portfolio.jpg';
 class UXDesignWaffler extends Component {
 
     render(){
+
+        window.scrollTo(0,0);
+        
         return(
             <>
             {/* <div className='ux-design'> 

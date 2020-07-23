@@ -12,6 +12,8 @@ import SammyMoxieMugs from '../images/GD/Sammy/SammyMugs.jpg';
 class GraphicDesignSammy extends Component {
 
     render(){
+
+        window.scrollTo(0,0);
         
         return(
             <div className='parentDiv'>

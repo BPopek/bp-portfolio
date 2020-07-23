@@ -1,16 +1,12 @@
 import React, { Component, useLayoutEffect } from 'react';
 import Iframe from 'react-iframe';
-var Scroll = require('react-scroll');
-var scroll = Scroll.animateScroll;
+
 
 class WebDesignAlta extends Component {
 
     render(){
-        // scroll.scrollToTop({
-        //     top: 0,
-        //     left: 0,
-        //     behavior: 'smooth'
-        //     });
+        
+        window.scrollTo(0,0);
 
         return(
             <div className='parentDiv'>

@@ -11,6 +11,8 @@ import KQstuff from '../images/GD/print/KQGroup.jpg';
 class GraphicDesignPrint extends Component {
 
     render(){
+
+        window.scrollTo(0,0);
         
         return(
             <div className='parentDiv'>

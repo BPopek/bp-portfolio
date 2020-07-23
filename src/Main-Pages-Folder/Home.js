@@ -37,8 +37,8 @@ function Home(props){
     useLayoutEffect(() => {
         scroller.scrollTo(props.location.state && props.location.state.section)
     }, [])
-    // console.log(props.location)
-    // console.log(props.location.state)
+    console.log(props.location)
+    console.log(props.location.state)
 
     return(
         <>

@@ -13,6 +13,9 @@ import BA6 from '../images/GD/shirts/Blue Angels/FFE2355_BY.jpg';
 class GraphicDesignBA extends Component {
 
     render(){
+
+        window.scrollTo(0,0);
+        
         return(
             <div className='parentDiv'>
                 <Switch>

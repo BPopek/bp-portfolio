@@ -14,6 +14,8 @@ import CPO7 from '../images/GD/shirts/CPO/35941070304_e16e779e7f_k.jpg';
 class GraphicDesignCPO extends Component {
 
     render(){
+
+        window.scrollTo(0,0);
         
         return(
             <div className='parentDiv'>

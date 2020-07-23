@@ -10,6 +10,9 @@ import WP4 from '../images/Web/WP/WP4.png';
 class WebDesignWPExemplar extends Component {
     
     render(){
+
+        window.scrollTo(0,0);
+
         return(
             <div className='parentDiv'>
                 <div className='webGitHubLinks'>
