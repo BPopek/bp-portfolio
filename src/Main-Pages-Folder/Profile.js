@@ -33,17 +33,17 @@ function Profile () {
             <h4 className='categorySpacer'>SKILLS</h4>
 
                 <h5 className='profileHeader'>Software Development:</h5>
-                <hr className='profileLineSD' />
+                {/* <hr className='profileLineSD' /> */}
                 <p className='profileSmHead'>Front End: <span className='profileDetail'>React, JavaScript, ES6, HTML5, CSS, Sass, Bootstrap, jQuery</span></p> 
                 <p className='profileSmHead'>Back End: <span className='profileDetail'>Node.js, Express, MongoDB, Mongoose</span></p>
                 <p className='profileSmHead'>Other: <span className='profileDetail'>Git, JSON, Agile, Wordpress</span></p>
                 <h5 className='profileHeader'>Design:</h5>
-                <hr className='profileLineD' />
+                {/* <hr className='profileLineD' /> */}
                 <p className='profileSmHead'>Adobe Creative Suite: <span className='profileDetail'>InDesign, Photoshop, Illustrator</span></p>
                 <p className='profileSmHead'>Other: <span className='profileDetail'>QuarkXPress, WordPress</span></p>
                 <p className='profileSmHead'>UX: <span className='profileDetail'>InVision, Sketch, Balsamiq</span></p>
                 <h5 className='profileHeader'>Contact:</h5>
-                <hr className='profileLineC' />
+                {/* <hr className='profileLineC' /> */}
                 {/* <p className='profileSmHead'>Email: <span className='profileDetail'>betsypopek@gmail.com</span></p> */}
                 <p className='profileSmHead'>Email: <a href="mailto:betsypopek@gmail.com" className='profileDetailEmail'>betsypopek@gmail.com</a></p>
                 <p className='profileSmHeadPhone'>Phone: <span className='profileDetail'>801-448-7273</span></p>
