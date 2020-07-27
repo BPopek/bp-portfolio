@@ -131,6 +131,8 @@ html {
     box-sizing: border-box;
 }
 .navbarLink {
+    display: block;
+    position: relative;
     font-family: $primaryHeaderFont;
     font-style: normal;
     font-weight: 400;
@@ -146,6 +148,7 @@ html {
     &:hover {
         color: $primaryAccentColor;
         font-weight: 600;
+        letter-spacing: -.01px;
     }
     @media (min-width: 400px) {
         font-size: 12px;
@@ -167,18 +170,18 @@ html {
     }
 }
 .navbarLinkActive {
+    display: block;
     position: relative;
     color: whitesmoke;
     font-weight: 600;
-    border-bottom: 3px solid $primaryAccentColor;
     padding: 0 2px 0;
     margin: 0px 5px 1q;
     font-size: 11.5px;
-    letter-spacing: .15px;
+    letter-spacing: -.01px;
     z-index: 5;
     line-height: 1.8;
     cursor: pointer;
-    // padding-bottom: 2px;
+
     @media (min-width: 400px) {
         font-size: 12px;
         border-bottom: 4px solid $primaryAccentColor;
@@ -192,8 +195,10 @@ html {
     }
     @media (min-width: 750px) {
         font-size: 15px;
+        letter-spacing: -.1px;
     }
 } 
+
 // .navbarLinkActive:after {
 //     display: none;
 
